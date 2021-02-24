@@ -1,9 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { of, throwError } from 'rxjs';
+import { Observable, throwError } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
 import { Login } from '../../interfaces/login/Login.interface';
+import { Sessao } from '../../interfaces/Sessao.interface';
 import { AuthService } from '../../services/auth/auth.service';
 
 @Injectable({
@@ -17,28 +18,17 @@ export class NufakeLoginService {
     private authService: AuthService
   ) { }
 
-  doLogin({ usuario, senha }: Login) {
-    //Chamando a API localhost:3000/login
-    // return this.http.post(`${this.API_URL}/login`, { usuario, senha }, this.httpOptions)
-
-    // MOCK
-    if (usuario === 'usuario' && senha === 'senha') {
-      return of({
-        login: {
-          usuario: "usuario",
-          senha: "senha"
-        },
-        token:"tokendousuario"
-      })
+  doLogin({ usuario, senha }: Login):Observable<Sessao> {
+    return this.http.post<Sessao>(`${this.API_URL}/login`, { usuario, senha })
       .pipe(
         tap(
           response => {
-            this.authService.setUser(response.login);
+            this.authService.setUser(response.usuario);
             this.authService.setToken(response.token);
           }
         )
       )
-    }
+
     return throwError("Usuário ou senha incorretos")
   }
 }
