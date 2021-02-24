@@ -1,0 +1,89 @@
+.texts{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+  }
+  
+.button{
+  background-color: #68DE5A;
+  width: 80%;
+  height: 2pc;
+  margin-top: 3%;
+  border-radius: 15px 15px;
+  border: #68DE5A;
+  color: white;
+  margin-left: 10%;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  /*max-width: 30%;*/
+  margin-top: 5%;
+  min-height: 25pc;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px 10px;
+}
+@media screen and (max-width: 790px) {
+  .card {
+    max-width: 80%;
+    min-width: 80%
+  }
+}
+@media screen and (min-width: 790px) {
+  .card {
+    max-width: 400px;
+    margin-top: 5%;
+  }
+}
+.input-container{
+  margin: auto;
+  max-width: 85%;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+.input-container {
+  position: relative;
+}
+
+.input {
+  border: 0;
+  border-bottom: 2px solid #9e9e9e;
+  outline: none;
+  transition: .2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.label {
+  top: 0;
+  left: 0; right: 0;
+  color: #616161;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  font-size: 1rem;
+  cursor: text;
+  transition: .2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.input,
+.label {
+  width: 100%;
+  height: 3rem;
+  font-size: 1rem;
+}

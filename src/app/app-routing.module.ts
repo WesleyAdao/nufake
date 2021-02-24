@@ -25,11 +25,17 @@ const routes: Routes = [
     canActivate: [IsNotLoggedGuard]
   },
   {
+    path: 'error', component: NufakeErrorComponent,
+    canActivate: [IsNotLoggedGuard]
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
   }, {
-    path: '**', component: NufakeErrorComponent
+    path: '**',
+    redirectTo: 'home',
+    pathMatch: 'full'
   }
 ];
 
