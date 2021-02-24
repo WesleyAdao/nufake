@@ -5,19 +5,59 @@ import { Login } from '../../interfaces/login/Login.interface';
   providedIn: 'root'
 })
 export class AuthService {
+  token: string;
+  login: Login
+
   constructor() { }
 
-  setUserSession(session:Login ) {
-    localStorage.setItem('session', JSON.stringify(session))
+  setUser(login: Login) {
+    this.login = login
+    localStorage.setItem('login', JSON.stringify(login))
   }
 
-  getUserSession(){
-    const user = localStorage.getItem('session')
+  getUser() {
+
+    if (this.login) {
+      return this.login
+    }
+
+    const user = localStorage.getItem('login')
 
     if (user) {
-      return JSON.parse(user)
+      this.login = JSON.parse(user)
+      return this.login
     }
 
     return null
+  }
+
+  getToken() {
+    if (this.token) {
+      return this.token
+    }
+
+    const userToken = localStorage.getItem('token')
+
+    if (userToken) {
+      this.token = userToken
+      return this.token
+    }
+
+    return null
+  }
+
+  setToken(token: string) {
+    this.token = token;
+    localStorage.setItem('token', token)
+  }
+
+  isLoggedIn(): boolean {
+
+    if (this.getUser() && this.getToken()) {
+      return true
+    }
+
+    console.log(this.getToken())
+    return false
   }
 }
