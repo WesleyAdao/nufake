@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #8C52E5;
-  height: 100vh;
 
   &__gama-logo{
     width: 100vw;
@@ -80,6 +78,7 @@
         color: #fff;
         font-weight: 500;
         margin-right: 10rem;
+        margin-top: 1rem;
       }
 
     }
