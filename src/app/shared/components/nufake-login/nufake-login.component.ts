@@ -12,25 +12,32 @@ import { Router } from '@angular/router';
 })
 export class NufakeLoginComponent implements OnInit {
   usuario: string;
-  senha:string;
-  userLogin:Login;
+  senha: string;
+  userLogin: Login;
+  imageLogo = "gama-academy-logo-horizontal-verde-branco1 1.svg"
+  arrowRight = "arrow-right.svg"
 
   constructor(
     private nufakeLoginService: NufakeLoginService,
-    private router:Router
+    private router: Router
   ) { }
 
   ngOnInit(): void {
   }
 
+<<<<<<< HEAD
   onSubmit(form:NgForm) {
   
+=======
+  onSubmit(form: NgForm) {
+
+>>>>>>> 55afd290f0ff968458d5c2ea668a26572ae8d5c7
     this.login()
   }
 
   login() {
 
-    this.userLogin= {
+    this.userLogin = {
       senha: this.senha,
       usuario: this.usuario
     }
@@ -40,12 +47,12 @@ export class NufakeLoginComponent implements OnInit {
         take(1)
       ).subscribe(
         response => this.loginSuccess(),
-        error =>{
+        error => {
           console.log("Ocorreu um erro ao logar")
         }
       )
   }
-  loginSuccess(){
+  loginSuccess() {
     this.router.navigate(['dashboard'])
   }
 }

@@ -1,7 +1,24 @@
-<h1>nuFake - # Login</h1>
-<form #form="ngForm" (ngSubmit)="onSubmit(form)">
-  usuario<input type="text" name="usuario" [(ngModel)]="usuario">
-  senha <input type="password" name="senha" [(ngModel)]="senha">
-  <button type="submit">Enviar</button>
+<div class="container">
+  <div class="container__gama-logo">
+    <img src="assets/{{imageLogo}}" alt="Gama Academy logo">
+  </div>
 
-</form>
+  <div class="container__loginForm">
+    <h2>Faça seu login</h2>
+    <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+      <input type="text" name="usuario" [(ngModel)]="usuario" placeholder="Digite seu usuário">
+      <input type="password" name="senha" [(ngModel)]="senha" placeholder="Digite sua senha">
+
+      <button type="submit" class="formButton">
+        <p class="formButton__text">Continuar</p> <img src="assets/{{arrowRight}}" alt="">
+      </button>
+
+      <div class="links">
+        <a routerLink="../recovery">Esqueci minha senha ></a>
+        <a routerLink="../home">Ainda não sou cliente ></a>
+      </div>
+
+    </form>
+  </div>
+
+</div>
