@@ -1,1 +1,7 @@
-<p>nufake-login works!</p>
+<h1>nuFake - # Login</h1>
+<form #form="ngForm" (ngSubmit)="onSubmit(form)">
+  usuario<input type="text" name="usuario" [(ngModel)]="usuario">
+  senha <input type="password" name="senha" [(ngModel)]="senha">
+  <button type="submit">Enviar</button>
+
+</form>
