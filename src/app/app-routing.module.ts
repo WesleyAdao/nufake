@@ -22,7 +22,7 @@ const routes: Routes = [
   },
   {
     path: 'recovery', component: NufakeRecoverypassComponent,
-    canActivate: [LoggedInGuard]
+    canActivate: [IsNotLoggedGuard]
   },
   {
     path: '',
