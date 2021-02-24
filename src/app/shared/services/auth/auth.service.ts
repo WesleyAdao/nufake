@@ -17,11 +17,13 @@ export class AuthService {
 
   getUser() {
 
+
     if (this.login) {
       return this.login
     }
 
     const user = localStorage.getItem('login')
+
 
     if (user) {
       this.login = JSON.parse(user)
@@ -49,6 +51,10 @@ export class AuthService {
   setToken(token: string) {
     this.token = token;
     localStorage.setItem('token', token)
+  }
+
+  setData(data: any) {
+    localStorage.setItem('data', JSON.stringify(data))
   }
 
   isLoggedIn(): boolean {

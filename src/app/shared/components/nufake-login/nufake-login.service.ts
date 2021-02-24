@@ -28,16 +28,18 @@ export class NufakeLoginService {
           usuario: "usuario",
           senha: "senha"
         },
-        token:"tokendousuario"
+        token: "tokendousuario",
+        data: { cpf: '123456789', nome: 'kelvin' } //criado para poder fazer o mock com recovery
       })
-      .pipe(
-        tap(
-          response => {
-            this.authService.setUser(response.login);
-            this.authService.setToken(response.token);
-          }
+        .pipe(
+          tap(
+            response => {
+              this.authService.setData(response.data);
+              this.authService.setUser(response.login);
+              this.authService.setToken(response.token);
+            }
+          )
         )
-      )
     }
     return throwError("Usuário ou senha incorretos")
   }
