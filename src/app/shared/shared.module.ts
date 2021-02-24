@@ -6,7 +6,7 @@ import { NufakeRecoverypassComponent } from './components/nufake-recoverypass/nu
 import { NufakeErrorComponent } from './components/nufake-error/nufake-error.component';
 import { NufakeDashComponent } from './components/nufake-dash/nufake-dash.component';
 import { RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -20,7 +20,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
   exports:[
     NufakeHomeComponent,
