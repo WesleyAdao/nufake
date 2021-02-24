@@ -1,31 +1,32 @@
 import { Injectable } from '@angular/core';
 import { Login } from '../../interfaces/login/Login.interface';
+import { Usuario } from '../../interfaces/usuario/Usuario.interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
   token: string;
-  login: Login
+  usuario: Usuario
 
   constructor() { }
 
-  setUser(login: Login) {
-    this.login = login
-    localStorage.setItem('login', JSON.stringify(login))
+  setUser(usuario: Usuario) {
+    this.usuario = usuario
+    localStorage.setItem('usuario', JSON.stringify(usuario))
   }
 
   getUser() {
 
-    if (this.login) {
-      return this.login
+    if (this.usuario) {
+      return this.usuario
     }
 
-    const user = localStorage.getItem('login')
+    const user = localStorage.getItem('usuario')
 
     if (user) {
-      this.login = JSON.parse(user)
-      return this.login
+      this.usuario = JSON.parse(user)
+      return this.usuario
     }
 
     return null
@@ -53,9 +54,9 @@ export class AuthService {
 
   isLoggedIn(): boolean {
 
-    if (this.getUser() && this.getToken()) {
-      return true
-    }
+     if (this.getUser() && this.getToken()) {
+       return true
+     }
 
     console.log(this.getToken())
     return false

@@ -1,0 +1,103 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #8C52E5;
+  height: 100vh;
+
+  &__gama-logo{
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    padding:4rem 4.3rem;
+  }
+
+  &__loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 28.5rem;
+    height: 26.5rem;
+
+    background: #FBFBFB;
+    border-radius: 8px;
+
+    h2{
+      width: 22rem;
+      height: 4rem;
+
+      font-size: 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1.5rem;
+    }
+
+    form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    input{
+      height: 2rem;
+      width: 22rem;
+      margin-bottom: 2.5rem;
+
+      border: none;
+      border-bottom: 1px solid #878686;
+    }
+
+    ::placeholder {
+      color: #878686;
+    }
+
+    :-ms-input-placeholder {
+      color: #878686;
+    }
+
+    ::-ms-input-placeholder {
+      color: #878686;
+    }
+
+    .formButton{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      width: 22rem;
+      height: 2.7rem;
+
+      background: #68DE5A;
+
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+
+      &__text{
+        color: #fff;
+        font-weight: 500;
+        margin-right: 10rem;
+      }
+
+    }
+
+    .links{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      margin:2.2rem auto;
+
+      a{
+        margin:0.2rem;
+        text-decoration: none;
+        font-size: 0.8rem;
+        color: #8C52E5;
+       }
+    }
+  }
+}
