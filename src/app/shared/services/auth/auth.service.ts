@@ -18,14 +18,8 @@ export class AuthService {
 
   getUser() {
 
-<<<<<<< HEAD
-
-    if (this.login) {
-      return this.login
-=======
     if (this.usuario) {
       return this.usuario
->>>>>>> 55afd290f0ff968458d5c2ea668a26572ae8d5c7
     }
 
     const user = localStorage.getItem('usuario')
