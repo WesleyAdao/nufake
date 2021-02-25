@@ -1,7 +1,7 @@
 .quadro1 {
 
     position: absolute;
-    width: 1440px;
+    width: 100%;
     height: 900px;
     left: 0px;
     top: 0px;
@@ -12,44 +12,444 @@
 .quadro2 {
 
 
-position: absolute;
-width: 1440px;
-height: 900px;
-left: 0px;
-top: 901px;
-background-color: #EAEAEA;
+    position: absolute;
+    width: 100%;
+    height: 900px;
+    left: 0px;
+    top: 901px;
+    background-color: #EAEAEA;
 
 }
 
 .quadro3 {
 
-position: absolute;
-width: 1440px;
-height: 900px;
-left: 0px;
-top: 1802px;
-background-color: #8C52E5;
+    position: absolute;
+    width: 100%;
+    height: 900px;
+    left: 0px;
+    top: 1802px;
+    background-color: #8C52E5;
 
 }
 
 .quadro4 {
 
-position: absolute;
-width: 1440px;
-height: 900px;
-left: 0px;
-top: 2703px;
-background-color: #68DE5A;
+    position: absolute;
+    width: 100%;
+    height: 900px;
+    left: 0px;
+    top: 2703px;
+    background-color: #68DE5A;
+    background-image: url(~src/assets/galera.svg)
 
 }
 
 .quadro5 {
 
-position: absolute;
-width: 1440px;
-height: 900px;
-left: 0px;
-top: 3605px;
-background-color: #EAEAEA;
+    position: absolute;
+    width: 100%;
+    height: 900px;
+    left: 0px;
+    top: 3605px;
+    background-color: #EAEAEA;
+
+}
+
+//Conteúdo quadro 1
+
+.campoTextoQuad1 {
+
+    margin-left: 12%;
+    margin-top: 10%;
+    position: absolute;
+
+}
+
+.textoQuad1 {
+    
+    width: 281px;
+    height: 173px;
+    font-weight: normal;
+    font-size: 29px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+
+}
+
+.card {
+
+    width: 349px;
+    height: 461.23px;
+    background-color: #FBFBFB;
+    margin-left: 70%;
+    margin-top: 8%;
+    border-radius: 8px;
+    position: absolute;
+
+
+}
+
+.imgQuad1 {
+
+    width: 773px;
+    height: 642px;
+    margin-left: 23%;
+    margin-top: 259px;
+
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    &__cadForm{
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      height: 90%;
+      margin: 10%;
+  
+      background: #FBFBFB;
+      border-radius: 8px;
+  
+      form{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+      }
+  
+      input{
+          
+        height: 20px;
+        width: 100%;
+        margin: auto;
+        background: #FBFBFB;
+  
+        border: none;
+        border-bottom: 1px solid #878686;
+      }
+  
+      ::placeholder {
+        font-size: 12px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+        color: #878686;
+      }
+      
+      .formButton{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+  
+        width: 276.74px;
+        height: 47.66px;
+  
+        background: #D8D8D8;
+  
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+  
+        &__text{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            color: #9B9B9B;
+            margin-right: 6rem;
+            margin-top: 1rem;
+        }
+  
+      }
+  
+      
+    }
+  }
+
+  
+.botaoAcessar{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 276.74px;
+    height: 47.66px;
+
+    background: #FFFFFF;
+
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+
+    &__text{
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 20px;
+        color: #8C52E5;
+        margin-right: 6rem;
+        margin-top: 1rem;
+    }
+    
+}
+
+//Conteúdo quadro 2
+
+.col1 {
+
+    
+    position: absolute;
+    width: 600px;
+    height: 786px;
+    background-color: #000000;
+    margin-left: 70px;
+    margin-top: 63px;
+
+}
+
+.col2 {
+
+    position: absolute;
+    width: 600px;
+    height: 786px;
+    background-color: #F8F8F8;
+    margin-left: 670px;
+    margin-top: 63px;
+
+}
+
+.campoTitle1 {
+
+    width: 514px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 50px;
+    position: absolute;
+
+}
+
+.title1 {
+
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    color: #68DE5A;
+
+}
+
+.campoText1 {
+
+    width: 280px;
+    height: 150px;
+    margin-top: 600px;
+    margin-left: 100px;
+    position: absolute;
+
+}
+
+.text1 {
+
+    font-size: 21px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    color: #68DE5A;
+
+}
+
+.campoTitle2 {
+
+    width: 459px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 150px;
+    position: absolute;
+
+}
+
+.title2 {
+
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    color: #1D1D1D;
+
+}
+
+.campoText2 {
+
+    width: 280px;
+    height: 150px;
+    margin-top: 600px;
+    margin-left: 100px;
+    position: absolute;
+
+}
+
+.text2 {
+
+    font-size: 21px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    color: #1D1D1D;
+    
+}
+
+.imgCol1 {
+
+    margin-top: 100px;
+
+}
+
+.imgCol2 {
+
+    margin-top: 130px;
+    margin-left: 100px;
+
+}
+
+//Conteúdo quadro 3
+
+.campoTextoQuad3 {
+
+    position: absolute;
+    width: 459px;
+    height: 150px;
+    margin-top: 28%;
+    margin-left: 10%;
+
+}
+
+.titleQuad3 {
+
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+
+}
+
+.textoQuad3 {
+
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+
+
+}
+
+.campoZero {
+
+    position: absolute;
+    width: 373px;
+    height: 200px;
+    margin-top: 25%;
+    margin-left: 60%;
+
+}
+
+.zero {
+
+    font-weight: 500;
+    font-size: 186px;
+    line-height: 218px;
+    display: flex;
+    align-items: center;
+    color: #68DE5A;
+
+}
+
+//Conteúdo quadro 4
+
+.campoTextoQuad4 {
+
+    position: absolute;
+    width: 459px;
+    height: 50px;
+    margin-top: 30%;
+    margin-left: 10%;
+
+}
+
+.titleQuad4 {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    
+}
+
+.textoQuad4 {
+
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    
+}
+
+//Conteúdo quadro 5
+
+.tituloQuad5 {
+    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+
+}
+
+.textoQuad5 {
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    
+}
+
+.campoTextoQuad5 {
+
+    width: 444px;
+    height: 300px;
+    margin-left: 10%;
+    margin-top: 20%;
+    position: absolute;
+
+}
+
+.imgQuad5 {
+
+    margin-left: 55%;
+    margin-top: 10%;
 
 }
