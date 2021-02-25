@@ -1,3 +1,16 @@
+@media(max-width:500px){
+    img{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+    }
+
+    button {
+
+    }
+}
+
 .container{
   display: flex;
   flex-direction: column;
@@ -15,13 +28,17 @@
     flex-direction: column;
     align-items: center;
 
-    width: 28.5rem;
-    height: 26.5rem;
+    max-width: 455px;
+    max-height: 422px;
+    width: 60vw;
+    height: 48vh;
 
     background: #FBFBFB;
     border-radius: 8px;
 
     h2{
+      max-width: 360.79px;
+      max-height: 57.96px;
       width: 22rem;
       height: 4rem;
 
@@ -40,8 +57,9 @@
     }
 
     input{
+      max-width: 352.78px;
+      width: 42vw;
       height: 2rem;
-      width: 22rem;
       margin-bottom: 2.5rem;
 
       border: none;
@@ -65,22 +83,31 @@
       align-items: center;
       justify-content: space-around;
 
-      width: 22rem;
-      height: 2.7rem;
+      max-width: 360.79px;
+      width: 42vw;
+
+      height: 5vh;
 
       background: #68DE5A;
 
       border: none;
       border-radius: 20px;
+
       cursor: pointer;
 
       &__text{
+        max-width: 360.79px;
         color: #fff;
         font-weight: 500;
-        margin-right: 10rem;
+        margin-right: 46%;
         margin-top: 1rem;
       }
 
+      transition: background 0.2s;
+    }
+
+    button:hover{
+      background-color: #47d138;
     }
 
     .links{
@@ -89,7 +116,7 @@
       align-items: center;
       justify-content: space-around;
 
-      margin:2.2rem auto;
+      margin:10% auto;
 
       a{
         margin:0.2rem;

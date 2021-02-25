@@ -52,8 +52,8 @@ export class AuthService {
     localStorage.setItem('token', token)
   }
 
-  setData(data: any) {
-    localStorage.setItem('data', JSON.stringify(data))
+  setData(cpf:string) {
+    localStorage.setItem('cpf', cpf)
   }
 
   isLoggedIn(): boolean {

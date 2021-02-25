@@ -25,7 +25,7 @@ export class NufakeLoginService {
           response => {
             this.authService.setUser(response.usuario);
             this.authService.setToken(response.token);
-            //this.authService.setData(response.data);
+            this.authService.setData(response.usuario.cpf);
           }
         )
       )
