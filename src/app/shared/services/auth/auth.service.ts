@@ -23,6 +23,7 @@ export class AuthService {
 
     const user = localStorage.getItem('usuario')
 
+
     if (user) {
       this.usuario = JSON.parse(user)
       return this.usuario
@@ -49,6 +50,10 @@ export class AuthService {
   setToken(token: string) {
     this.token = token;
     localStorage.setItem('token', token)
+  }
+
+  setData(data: any) {
+    localStorage.setItem('data', JSON.stringify(data))
   }
 
   isLoggedIn(): boolean {
