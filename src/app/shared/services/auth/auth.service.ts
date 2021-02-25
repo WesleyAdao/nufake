@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Login } from '../../interfaces/login/Login.interface';
 import { Usuario } from '../../interfaces/usuario/Usuario.interface';
 
 @Injectable({

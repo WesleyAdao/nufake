@@ -25,10 +25,9 @@ export class NufakeLoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit(form:NgForm) {
-  
-    this.login();
+  onSubmit(form: NgForm) {
 
+    this.login()
   }
 
   login() {
