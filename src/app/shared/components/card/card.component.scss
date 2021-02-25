@@ -1,0 +1,375 @@
+.card1 {
+  position:absolute;
+  width: 407.8px;
+  height: 255.05px;
+  left: 243px;
+  top: 145px;
+
+  background: #FBFBFB;
+  border-radius: 8px;
+
+}
+.vetorCard1{
+position: absolute;
+left: 10%;
+right: 10%;
+top: 10%;
+bottom: 0%;
+
+color: #9B9B9B;
+}
+
+.conta {
+  position: absolute;
+  width: 48px;
+  height: 21px;
+  left: 343px;
+  top: 180px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 21px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #9B9B9B;
+}
+
+.saldoDisponivel {
+  position: absolute;
+  width: 131px;
+  height: 21px;
+  left: 284px;
+  top: 244px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 21px;
+
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #9B9B9B;
+}
+
+.transacoes {
+  position: absolute;
+  width: 94px;
+  height: 21px;
+  left: 283px;
+  top: 334px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 21px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #9B9B9B;
+}
+
+.saldoAtual {
+  position: absolute;
+  width: 253px;
+  height: 54px;
+  left: 283px;
+  top: 264px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+
+  color: #010101;
+}
+
+.quantiaTransacoes {
+  position: absolute;
+  width: 185px;
+  height: 19px;
+  left: 429px;
+  top: 332px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: #68DE5A;
+}
+
+.card2 {
+  position: absolute;
+  width: 407.8px;
+  height: 255.05px;
+  left: 747.2px;
+  top: 145px;
+
+  background: #FBFBFB;
+  border-radius: 8px;
+}
+.vetorCard2{
+position: initial;
+padding-top: 25px;
+width: 150px;
+height: 47px;
+left: 800px;
+top: 145px;
+
+color: #9B9B9B;
+}
+
+.contaCredito {
+  position: absolute;
+  width: 110px;
+  height: 21px;
+  left: 872px;
+  top: 186px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 21px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #9B9B9B;
+
+}
+
+.fatura {
+  position: absolute;
+  width: 96px;
+  height: 21px;
+  left: 791px;
+  top: 242px;
+
+  font-family: arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 21px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #9B9B9B;
+}
+
+.limiteDisponivel {
+  position: absolute;
+  width: 136px;
+  height: 21px;
+  left: 789px;
+  top: 338px;
+
+  font-family: arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 21px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #9B9B9B;
+}
+
+.valorFatura {
+  position: absolute;
+  width: 324px;
+  height: 29px;
+  left: 789px;
+  top: 275px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+
+  color: #1783E7;
+
+}
+
+.valorDisponivel {
+  position: absolute;
+  width: 185px;
+  height: 19px;
+  left: 934px;
+  top: 336px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: #68DE5A;
+
+}
+
+.card3 {
+  position: absolute;
+  padding-top: 8%;
+  width: 907.55px;
+  height: 280px;
+  left: 247.45px;
+  top: 450px;
+
+  background: #FBFBFB;
+  border-radius: 8px;
+}
+.vetorCard3{
+position: absolute;
+left: 4%;
+right: 12%;
+top: 9%;
+bottom: 0%;
+
+color: #9B9B9B;
+}
+.vetorCartaoCard3{
+position: absolute;
+width: 34px;
+height: 34px;
+left: 4%;
+top: 25%;
+
+color: #9B9B9B;
+}
+.lancamentos {
+  position: absolute;
+  width: 170px;
+  height: 21px;
+  left: 343px;
+  top: 498px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 21px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #9B9B9B;
+}
+
+.compra {
+  position: absolute;
+  width: 128px;
+  height: 19px;
+  left: 343px;
+  top: 564px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+.data {
+  position: absolute;
+  width: 79px;
+  height: 14px;
+  left: 1027px;
+  top: 567px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 14px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #9B9B9B;
+
+}
+
+.compraGama {
+  position: absolute;
+  width: 123px;
+  height: 21px;
+  left: 343px;
+  top: 589px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 21px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #9B9B9B;
+
+}
+
+.valorCompra {
+  position: absolute;
+  width: 96px;
+  height: 23px;
+  left: 343px;
+  top: 623px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
