@@ -18,7 +18,7 @@ export class NufakeLoginService {
     private authService: AuthService
   ) { }
 
-  doLogin({ usuario, senha }: Login):Observable<Sessao> {
+  login({ usuario, senha }: Login): Observable<Sessao> {
     return this.http.post<Sessao>(`${this.API_URL}/login`, { usuario, senha })
       .pipe(
         tap(
@@ -26,10 +26,9 @@ export class NufakeLoginService {
             this.authService.setUser(response.usuario);
             this.authService.setToken(response.token);
             this.authService.setData(response.usuario.cpf);
-          }
+          },
         )
       )
-
-    return throwError("Usuário ou senha incorretos")
+      return throwError("Usuário ou senha incorretos")
   }
 }

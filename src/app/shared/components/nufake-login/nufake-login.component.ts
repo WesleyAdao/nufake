@@ -37,17 +37,19 @@ export class NufakeLoginComponent implements OnInit {
       usuario: this.usuario
     }
 
-    this.nufakeLoginService.doLogin(this.userLogin)
+    this.nufakeLoginService.login(this.userLogin)
       .pipe(
         take(1)
       ).subscribe(
         response => this.loginSuccess(),
-        error => {
-          console.log("Ocorreu um erro ao logar")
-        }
+        error => this.loginError(error.error.error)
       )
   }
   loginSuccess() {
     this.router.navigate(['dashboard'])
+  }
+
+  loginError(error: string) {
+    alert(error)
   }
 }
