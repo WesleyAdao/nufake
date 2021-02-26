@@ -1,5 +1,5 @@
 export interface UsuarioDTO{
-  cpf: string;
+  cpf: number;
   login: string;
   nome: string;
   senha: string;
