@@ -100,81 +100,87 @@
 
 }
 
+.titleForm {
 
-.container{
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 22px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-  
+
+    color: #1D1D1D;
+
+}
+
+.container {
+
     &__cadForm{
 
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  
-      height: 90%;
-      margin: 10%;
-  
-      background: #FBFBFB;
-      border-radius: 8px;
-  
-      form{
+        height: 90%;
+        margin: 10%;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-      }
-  
-      input{
-          
-        height: 20px;
-        width: 100%;
-        margin: auto;
         background: #FBFBFB;
-  
-        border: none;
-        border-bottom: 1px solid #878686;
-      }
-  
-      ::placeholder {
-        font-size: 12px;
-        line-height: 14px;
-        display: flex;
-        align-items: center;
-        color: #878686;
-      }
-      
-      .formButton{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-  
-        width: 276.74px;
-        height: 47.66px;
-  
-        background: #D8D8D8;
-  
-        border: none;
-        border-radius: 20px;
-        cursor: pointer;
-  
-        &__text{
-            font-weight: 500;
+        border-radius: 8px;
+
+        input {
+            
+            height: 20px;
+            width: 276.74px;
+            margin-top: 25px;
+            background: #FBFBFB;
+
+            border: none;
+            border-bottom: 1px solid #878686;
+
+        }
+
+        ::placeholder {
+
             font-size: 12px;
             line-height: 14px;
-            color: #9B9B9B;
-            margin-right: 6rem;
-            margin-top: 1rem;
-        }
-  
-      }
-  
-      
-    }
-  }
+            display: flex;
+            align-items: center;
+            color: #878686;
 
+        }
+        
+        .formButton {
+            
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            width: 276.74px;
+            height: 47.66px;
+            margin-top: 20px;
+
+            background: #D8D8D8;
+
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+
+            &__text {
+
+                font-size: 12px;
+                line-height: 14px;
+                color: #9B9B9B;
+                margin-right: 6rem;
+                margin-top: 1rem;
+
+            }
+
+        }
+
+    }
+
+}
+
+.link {
+
+    text-decoration: none;
+
+}
   
 .botaoAcessar{
 
@@ -190,8 +196,10 @@
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    text-decoration: none;
 
     &__text{
+
         font-weight: 500;
         font-size: 17px;
         line-height: 20px;

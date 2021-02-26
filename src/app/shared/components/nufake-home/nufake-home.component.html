@@ -1,37 +1,35 @@
-<div class = "quadro1">
+<div class="quadro1">
     <img class="logo" src="../../assets/logo-gama.png">
     <div class="campoTextoQuad1">
         <p class="textoQuad1">
             Gama Bank é um projeto de nossos alunos. <br><br>
             Já tem conta?
         </p>
-        <button type="submit" class="botaoAcessar">
-          <p class="botaoAcessar__text">Acessar</p> <img src="../../assets/seta-acessar.svg">
-        </button>
-        
+        <a class="link" routerLink="../login">
+            <button class="botaoAcessar">
+                <p class="botaoAcessar__text">Acessar</p> <img src="../../assets/seta-acessar.svg">
+            </button>
+        </a>
     </div>
-
     <div class="card">
         <div class="container__cadForm">
-            <p class="titleForm">Peça sua conta e cartão de crédito do Gama Bank</p>
-                <input type="text" placeholder="Digita seu CPF" />
-                <input type="text" placeholder="Escolha um nome de usuário" />
-                <input type="text" placeholder="Nome completo" />
-                <input type="text" placeholder="Digite sua senha" />
-                <input type="text" placeholder="Confirme sua senha" />
+            <form #formHome="ngForm" (ngSubmit)="onSubmit(formHome)">
+                <p class="titleForm">Peça sua conta e cartão de crédito do Gama Bank</p>
+                <input type="text" name="cpf" placeholder="Digite seu CPF" [(ngModel)]="cpf" />
+                <input type="text" name="login" placeholder="Escolha um nome de usuário" [(ngModel)]="login" />
+                <input type="text" name="nome" placeholder="Nome completo" [(ngModel)]="nome" />
+                <input type="password" name="senha" placeholder="Digite sua senha" [(ngModel)]="inputSenha" />
+                <input type="password" name="cSenha" placeholder="Confirme sua senha" [(ngModel)]="confirmaSenha" />
                 <button type="submit" class="formButton">
-                <p class="formButton__text">Continuar</p> <img src="../../assets/seta-continuar.svg">
+                    <p class="formButton__text">Continuar</p> <img src="../../assets/seta-continuar.svg">
                 </button>
-    
+            </form>
         </div>
     </div>
-
     <img src="../../assets/happy.svg" class="imgQuad1">
-
 </div>
 
-<div class = "quadro2">
-
+<div class="quadro2">
     <div class="col1">
         <div class="campoTitle1">
             <p class="title1">Conta digital do Gama Academy</p>
@@ -50,12 +48,9 @@
         </div>
         <img src="../../assets/app-bg2.svg" class="imgCol2">
     </div>
-
-
 </div>
 
-<div class = "quadro3">
-
+<div class="quadro3">
     <div class="campoTextoQuad3">
         <p class="titleQuad3">Zero anuidade</p>
         <p class="textoQuad3">Burocracia custa caro. Somos eficientes para você não ter que pagar tarifas.</p>
@@ -66,17 +61,15 @@
 
 </div>
 
-<div class = "quadro4">
+<div class="quadro4">
     <div class="campoTextoQuad4">
         <p class="titleQuad4">O fim da complexidade</p>
         <p class="textoQuad4">Para quem sabe que tecnologia e design são melhores do que agências e papelada</p>
     </div>
-
-
 </div>
 
 
-<div class = "quadro5">
+<div class="quadro5">
     <div class="campoTextoQuad5">
         <p class="tituloQuad5">Simplifique a sua vida. Peça seu convite.</p><br>
         <p class="textoQuad5">
@@ -85,6 +78,5 @@
             Este é um projeto de avaliação | GamaAcademy | Accenture | 2021
         </p>
     </div>
-
     <img src="../../assets/pngkey1.svg" class="imgQuad5">
 </div>
