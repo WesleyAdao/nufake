@@ -1,0 +1,51 @@
+<mat-list class="propriedades">
+  <mat-list-item>Depósitos</mat-list-item>
+  <mat-list-item> Planos </mat-list-item>
+  <mat-list-item> Pagamentos </mat-list-item>
+  <mat-list-item> Transações </mat-list-item>
+ </mat-list>
+
+<div class="default-card">
+  <mat-card class="default-card-conta"><img src="./assets/Group.svg" class="vetorCard1">
+    <mat-card-header>
+      <div mat-card-avatar class="{{iconeCardConta}}"></div>
+      <mat-card-title>{{titulo}}</mat-card-title>
+      <mat-card-subtitle>{{subtitulo}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="valor1">R$: {{valor1}}</div>
+      <div class="labelValor">{{labelValor}}</div>
+      <div class="valor2">R$: {{valor2}}</div>
+    </mat-card-content>
+  </mat-card>
+</div>
+<div class="default-card">
+  <mat-card class="default-card-credito"><img src="./assets/credit-card1.svg" class="vetorCard2">
+    <mat-card-header>
+      <div mat-card-avatar class="{{iconeCardCredito}}"></div>
+      <mat-card-title>{{tituloCredito}}</mat-card-title>
+      <mat-card-subtitle>{{subtituloCredito}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="valor3">R$: {{valor3}}</div>
+      <div class="labelValorCredito">{{labelValorCredito}}</div>
+      <div class="valor4">R$: {{valor2}}</div>
+    </mat-card-content>
+  </mat-card>
+</div>
+<div class="default-card-lancamentos">
+  <mat-card>
+      <img src="./assets/Group.svg" class="vetorCard3">
+      <img src="./assets/credit-card2.svg" class="vetorCartaoCard3">
+    <mat-card-header>
+      <div mat-card-avatar class="{{iconeCardLancamentos}}"></div>
+      <mat-card-title>{{tituloLancamentos}}</mat-card-title>
+      <mat-card-subtitle>{{subtituloLancamentos}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="valor5">R$: {{valor5}}</div>
+      <div class="labelValorLancamentos">{{labelValorLancamentos}}</div>
+
+    </mat-card-content>
+  </mat-card>
+</div>

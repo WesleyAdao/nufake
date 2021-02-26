@@ -1,0 +1,22 @@
+<mat-card class="default-card">
+  <mat-card-header>
+    <div mat-card-avatar class="{{iconeCard}}"></div>
+    <mat-card-title>{{titulo}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-nav-list>
+      <mat-card mat-list-item href="..." *ngFor="let item of itens">
+        <mat-card-header>
+          <div mat-card-avatar class="{{item.iconeUrl}}"></div>
+          <mat-card-title>{{item.titulo}}</mat-card-title>
+          <mat-card-subtitle>{{item.beneficiario}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <label>{{item.valor}}</label>
+          <label>{{item.data}}</label>
+        </mat-card-content>
+      </mat-card>
+
+   </mat-nav-list>
+  </mat-card-content>
+</mat-card>
