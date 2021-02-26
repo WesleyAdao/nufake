@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import { CardListComponent } from '../card-list/card-list.component';
 import { DefaultCardComponent } from '../default-card/default-card.component';
 
 @Component({
@@ -10,7 +9,7 @@ import { DefaultCardComponent } from '../default-card/default-card.component';
 })
 export class NufakeDashComponent implements OnInit {
 
-  cardList: CardListComponent;
+
   defaultCard: DefaultCardComponent;
 
   constructor() { }

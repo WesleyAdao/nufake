@@ -1,14 +1,13 @@
-<mat-card class="propriedades">
-<div fxLayout="row" fxlayout.xs="column" fxLayoutAlign="center left" class="propriedades">
-  <div class="deposito">Depósitos</div>
-  <div class="planos">Planos</div>
-  <div class="pagamentos">Pagamentos</div>
-  <div class="transacoes">Transações</div>
-</div>
-</mat-card>
+<mat-list class="propriedades">
+  <mat-list-item>Depósitos</mat-list-item>
+  <mat-list-item> Planos </mat-list-item>
+  <mat-list-item> Pagamentos </mat-list-item>
+  <mat-list-item> Transações </mat-list-item>
+ </mat-list>
+
 <div class="default-card">
-  <mat-card class="default-card-conta">
-    <mat-card-header><img src="./assets/Group.svg" class="vetorCard1">
+  <mat-card class="default-card-conta"><img src="./assets/Group.svg" class="vetorCard1">
+    <mat-card-header>
       <div mat-card-avatar class="{{iconeCardConta}}"></div>
       <mat-card-title>{{titulo}}</mat-card-title>
       <mat-card-subtitle>{{subtitulo}}</mat-card-subtitle>
@@ -35,7 +34,7 @@
   </mat-card>
 </div>
 <div class="default-card-lancamentos">
-  <mat-card class="default-card-lacamentos">
+  <mat-card>
       <img src="./assets/Group.svg" class="vetorCard3">
       <img src="./assets/credit-card2.svg" class="vetorCartaoCard3">
     <mat-card-header>

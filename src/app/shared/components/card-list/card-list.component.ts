@@ -23,24 +23,7 @@ export class CardListComponent implements OnInit {
       iconeUrl: 'https://material.angular.io/assets/img/examples/shiba1.jpg',
 
     },
-    {
-      id: 2,
-      titulo: 'Compra no Crédito',
-      beneficiario: 'GamaAcademy',
-      valor: 'R$ 400,55',
-      data: 'Dia 12 de Jan.',
-      iconeUrl: 'https://material.angular.io/assets/img/examples/shiba1.jpg',
 
-    },
-    {
-      id: 3,
-      titulo: 'Compra no Cheque',
-      beneficiario: 'GamaAcademy',
-      valor: 'R$ 2.338,55',
-      data: 'Dia 24 de Jan.',
-      iconeUrl: 'https://material.angular.io/assets/img/examples/shiba1.jpg',
-
-    }
   ];
 
 
