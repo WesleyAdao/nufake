@@ -5,8 +5,9 @@ import { Usuario } from '../../interfaces/usuario/Usuario.interface';
   providedIn: 'root'
 })
 export class AuthService {
-  token: string;
   usuario: Usuario
+  token: string;
+  username: string;
 
   constructor() { }
 
@@ -23,13 +24,17 @@ export class AuthService {
 
     const user = localStorage.getItem('usuario')
 
-
     if (user) {
       this.usuario = JSON.parse(user)
       return this.usuario
     }
 
     return null
+  }
+
+  setToken(token: string) {
+    this.token = token;
+    localStorage.setItem('token', token)
   }
 
   getToken() {
@@ -45,11 +50,6 @@ export class AuthService {
     }
 
     return null
-  }
-
-  setToken(token: string) {
-    this.token = token;
-    localStorage.setItem('token', token)
   }
 
   setData(cpf:string) {
