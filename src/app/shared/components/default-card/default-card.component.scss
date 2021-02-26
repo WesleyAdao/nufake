@@ -1,7 +1,354 @@
 .default-card {
   max-width: 0;
+  width: 407.8px;
+  height: 255.05px;
+  left: 243px;
+  top: 145px;
+
+  background: #FBFBFB;
+  border-radius: 8px;
+}
+
+.propriedade{
+  width: 151px;
+height: 900px;
+left: 0px;
+top: 0px;
+
+background: #68DE5A;
+}
+//CARD CONTA
+.default-card-conta{
+
+  width: 407.8px;
+  height: 255.05px;
+  left: 243px;
+  top: 145px;
+
+  background: #FBFBFB;
+  border-radius: 8px;
+}
+.vetorCard1{
+
+left: 10%;
+right: 10%;
+top: 10%;
+bottom: 0%;
+
+color: #9B9B9B;
+}
+.labelValor {
+
+  width: 94px;
+  height: 21px;
+  left: 283px;
+  top: 334px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 21px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #9B9B9B;
+}
+.valor1 {
+
+  width: 253px;
+  height: 54px;
+  left: 283px;
+  top: 264px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+
+  color: #010101;
+}
+.valor2 {
+
+  width: 185px;
+  height: 19px;
+  left: 429px;
+  top: 332px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: #68DE5A;
+}
+
+.default-card-credito{
+
+  width: 407.8px;
+  height: 255.05px;
+  left: 747.2px;
+  top: 145px;
+
+  background: #FBFBFB;
+  border-radius: 8px;
+}
+.vetorCard2{
+  position: initial;
+  padding-top: 25px;
+  width: 150px;
+  height: 47px;
+  left: 800px;
+  top: 145px;
+
+  color: #9B9B9B;
+}
+
+.tituloCredito{
+
+  width: 110px;
+  height: 21px;
+  left: 872px;
+  top: 186px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 21px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #9B9B9B;
 
 }
+
+.subtituloCredito{
+
+  width: 96px;
+  height: 21px;
+  left: 791px;
+  top: 242px;
+
+  font-family: arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 21px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #9B9B9B;
+}
+
+.labelValorCredito {
+
+  width: 136px;
+  height: 21px;
+  left: 789px;
+  top: 338px;
+
+  font-family: arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 21px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #9B9B9B;
+}
+
+.valor3 {
+
+  width: 324px;
+  height: 29px;
+  left: 789px;
+  top: 275px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+
+  color: #1783E7;
+
+}
+
+.valor4 {
+
+  width: 185px;
+  height: 19px;
+  left: 934px;
+  top: 336px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: #68DE5A;
+
+}
+
+.default-card-lancamentos {
+
+  padding-top: 8%;
+  width: 907.55px;
+  height: 280px;
+  left: 247.45px;
+  top: 450px;
+
+  background: #FBFBFB;
+  border-radius: 8px;
+}
+.vetorCard3{
+
+right: 12%;
+top: 9%;
+bottom: 0%;
+
+color: #9B9B9B;
+}
+.vetorCartaoCard3{
+
+width: 34px;
+height: 34px;
+left: 4%;
+top: 25%;
+
+color: #9B9B9B;
+}
+.tituloLancamentos {
+
+  width: 170px;
+  height: 21px;
+  left: 343px;
+  top: 498px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 21px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #9B9B9B;
+}
+
+.subtituloLancamentos{
+
+  width: 128px;
+  height: 19px;
+  left: 343px;
+  top: 564px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+.data {
+
+  width: 79px;
+  height: 14px;
+  left: 1027px;
+  top: 567px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 14px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #9B9B9B;
+
+}
+
+.labelValorLancamentos {
+
+  width: 123px;
+  height: 21px;
+  left: 343px;
+  top: 589px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 21px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #9B9B9B;
+
+}
+
+.valor5 {
+
+  width: 96px;
+  height: 23px;
+  left: 343px;
+  top: 623px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+
+
 .elipse1Principal{
     position: absolute;
     width: 47px;
