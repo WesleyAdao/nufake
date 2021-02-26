@@ -1,9 +1,4 @@
 import { HttpClient } from '@angular/common/http';
-<<<<<<< HEAD
-import { Injectable } from '@angular/core';
-import { environment } from 'src/environments/environment';
-import { UsuarioDTO } from '../../interfaces/usuario/UsuarioDTO.interface';
-=======
 import { AuthService } from '../../services/auth/auth.service';
 import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
@@ -11,7 +6,6 @@ import { tap } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
 import { UsuarioDTO } from '../../interfaces/usuario/UsuarioDTO.interface';
 import { Cadastro } from '../../interfaces/usuario/cadastro.interface';
->>>>>>> ebd4850c21663c835d18cefd863e76f69ba7139f
 
 @Injectable({
   providedIn: 'root'
@@ -23,11 +17,6 @@ export class NufakeHomeService {
     private http: HttpClient,
   ) { }
 
-<<<<<<< HEAD
-  criarConta({ cpf, login, nome, senha }: UsuarioDTO) {
-    return this.http.post(`${this.API_URL}/usuarios`, { cpf, login, nome, senha })
-  }
-=======
   validaSenha({ inputSenha, confirmaSenha, senha}: Cadastro) {
 
     if (inputSenha == confirmaSenha) {
@@ -39,7 +28,7 @@ export class NufakeHomeService {
 
       //alert("Confirmar senha é diferente de senha")
       console.log("Confirmar senha é diferente de senha")
-      
+
     }
 
   }
@@ -60,5 +49,4 @@ export class NufakeHomeService {
     return this.http.post(`${this.API_URL}/usuarios`, { cpf, login, nome, senha })
   }*/
 
->>>>>>> ebd4850c21663c835d18cefd863e76f69ba7139f
 }
