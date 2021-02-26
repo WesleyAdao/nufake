@@ -26,7 +26,6 @@ export class NufakeLoginComponent implements OnInit {
   }
 
   onSubmit(form: NgForm) {
-
     this.login()
   }
 
@@ -45,11 +44,12 @@ export class NufakeLoginComponent implements OnInit {
         error => this.loginError(error.error.error)
       )
   }
+
   loginSuccess() {
     this.router.navigate(['dashboard'])
   }
 
   loginError(error: string) {
-    alert(error)
+    alert(error);
   }
 }
