@@ -28,7 +28,7 @@ export class NufakeHomeService {
 
       //alert("Confirmar senha é diferente de senha")
       console.log("Confirmar senha é diferente de senha")
-      
+
     }
 
   }

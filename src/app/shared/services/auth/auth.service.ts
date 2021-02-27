@@ -49,7 +49,7 @@ export class AuthService {
       return this.token
     }
 
-    return null
+    return "TOKEN INVALIDO"
   }
 
   setData(cpf:string) {

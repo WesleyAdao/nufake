@@ -4,11 +4,18 @@
       align-items: center;
       justify-content: center;
       margin: auto;
+      width: 100%;
     }
 
-    button {
-
+    .formButton{
+      display: flex;
+      flex-direction: column;
     }
+
+    button > img{
+      display: none;
+    }
+
 }
 
 .container{
@@ -60,7 +67,8 @@
       max-width: 352.78px;
       width: 42vw;
       height: 2rem;
-      margin-bottom: 2.5rem;
+      margin-bottom: 11%;
+      font-size: 0.8rem;
 
       border: none;
       border-bottom: 1px solid #878686;
@@ -81,7 +89,7 @@
     .formButton{
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: space-between;
 
       max-width: 360.79px;
       width: 42vw;
@@ -99,11 +107,14 @@
         max-width: 360.79px;
         color: #fff;
         font-weight: 500;
-        margin-right: 46%;
-        margin-top: 1rem;
+        margin:0 15px;
       }
 
       transition: background 0.2s;
+    }
+
+    .formButton > img{
+      margin:0 15px;
     }
 
     button:hover{
@@ -115,13 +126,12 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
-
-      margin:10% auto;
+      padding: 1rem;
 
       a{
         margin:0.2rem;
         text-decoration: none;
-        font-size: 0.8rem;
+        font-size: 0.8em;
         color: #8C52E5;
        }
     }

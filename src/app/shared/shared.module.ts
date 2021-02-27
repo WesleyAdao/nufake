@@ -1,4 +1,5 @@
 import { CommonModule } from '@angular/common';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
@@ -14,6 +15,7 @@ import { NufakeHomeComponent } from './components/nufake-home/nufake-home.compon
 import { NufakeLoginComponent } from './components/nufake-login/nufake-login.component';
 import { NufakeRecoverypassComponent } from './components/nufake-recoverypass/nufake-recoverypass.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { AuthInterceptor } from './interceptors/auth.interceptor';
 
 
 @NgModule({
@@ -36,7 +38,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     MatCardModule,
     MatListModule,
   ],
-  exports:[
+  exports: [
     NufakeHomeComponent,
     NufakeLoginComponent,
     NufakeRecoverypassComponent,
@@ -46,6 +48,13 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     CardListComponent,
     CardComponent,
     SidebarComponent
+  ],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true
+    }
   ]
 })
 export class SharedModule { }

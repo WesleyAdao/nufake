@@ -22,7 +22,7 @@ export class NufakeHomeComponent {
   senha: string;
   userCad: UsuarioDTO;
   cad: Cadastro;
-  
+
 
   /*
 
@@ -78,7 +78,7 @@ export class NufakeHomeComponent {
       )
 
   }
-  
+
   SignInSuccess() {
 
     this.router.navigate(['login'])
