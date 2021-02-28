@@ -1,11 +1,61 @@
 <div class="background" fxLayout="row" fxLayoutAlign="center center">
   <h2 fxFlex="100%">Olá Usuário, seja bem vindo!</h2>
   <app-default-card fxFlex="50%"></app-default-card>
-  <h1>Dados da API</h1>
-<p>{{dashboard.contaBanco.id}}</p>
-<p>{{dashboard.contaBanco.lancamentos}}</p>
-<p>{{dashboard.contaBanco.saldo}}</p>
-<p>{{dashboard.contaCredito.id}}</p>
-<p>{{dashboard.contaCredito.lancamentos}}</p>
-<p>{{dashboard.contaCredito.saldo}}</p>
+
+
+  <!-- <div *ngIf="dashboard">
+    <h1>Dados da API - Conta Banco</h1>
+    <p>Saldo:{{dashboard.contaBanco.saldo}}</p>
+    <p>ID:{{dashboard.contaBanco.id}}</p>
+
+    <p>Lancamentos</p>
+    <div *ngFor="let lancamento of dashboard.contaBanco.lancamentos">
+      <p>ID:{{lancamento.id}}</p>
+      <p>Data:{{lancamento.data}}</p>
+      <p>Valor:{{lancamento.valor}}</p>
+      <p>Conta:{{lancamento.conta}}</p>
+      <p>Descrição:{{lancamento.descricao}}</p>
+
+      <p>Plano da conta</p>
+      <p>ID:{{lancamento.planoConta.id}}</p>
+      <p>Descrição:{{lancamento.planoConta.descricao}}</p>
+      <p>Login:{{lancamento.planoConta.login}}</p>
+      <p>Tipo de Movimento:{{lancamento.planoConta.tipoMovimento}}</p>
+      <p>Padrão:{{lancamento.planoConta.padrao}}</p>
+
+      <p>Tipo:{{lancamento.tipo}}</p>
+    </div>
+
+    <h1>Dados da API - Conta Credito</h1>
+    <p>Saldo:{{dashboard.contaCredito.saldo}}</p>
+    <p>ID:{{dashboard.contaCredito.id}}</p>
+
+    <p>Lancamentos</p>
+    <div *ngFor="let lancamento of dashboard.contaCredito.lancamentos">
+      <p>ID:{{lancamento.id}}</p>
+      <p>Data:{{lancamento.data}}</p>
+      <p>Valor:{{lancamento.valor}}</p>
+      <p>Conta:{{lancamento.conta}}</p>
+      <p>Descrição:{{lancamento.descricao}}</p>
+
+      <p>Plano da conta</p>
+      <p>ID:{{lancamento.planoConta.id}}</p>
+      <p>Descrição:{{lancamento.planoConta.descricao}}</p>
+      <p>Login:{{lancamento.planoConta.login}}</p>
+      <p>Tipo de Movimento:{{lancamento.planoConta.tipoMovimento}}</p>
+      <p>Padrão:{{lancamento.planoConta.padrao}}</p>
+
+      <p>Tipo:{{lancamento.tipo}}</p>
+    </div>
+  </div> -->
+
+    <!-- Código abaixo lista todos os dados do API getPlanos
+      <h1>Transação</h1>
+    <div *ngFor="let conta of planoConta">
+    <p>ID:{{conta.id}}</p>
+    <p>Descrição:{{conta.descricao}}</p>
+    <p>Login:{{conta.login}}</p>
+    <p>Tipo de movimento:{{conta.tipoMovimento}}</p>
+    <p>Padrão:{{conta.padrao}}</p>
+  </div> -->
 </div>
