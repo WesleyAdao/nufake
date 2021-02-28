@@ -1,9 +1,11 @@
 <div class="background" fxLayout="row" fxLayoutAlign="center center">
   <h2 fxFlex="100%">Olá Usuário, seja bem vindo!</h2>
   <app-default-card fxFlex="50%"></app-default-card>
+</div>
 
 
-  <!-- <div *ngIf="dashboard">
+<!-- ABAIXO COMO OS VALORES DE CONTA PODEM SER MOSTRADOS NA TELA
+  <div *ngIf="dashboard">
     <h1>Dados da API - Conta Banco</h1>
     <p>Saldo:{{dashboard.contaBanco.saldo}}</p>
     <p>ID:{{dashboard.contaBanco.id}}</p>
@@ -26,6 +28,8 @@
       <p>Tipo:{{lancamento.tipo}}</p>
     </div>
 
+
+    ABAIXO COMO OS VALORES DE CONTA CRÉDITO PODEM SER MOSTRADOS NA TELA
     <h1>Dados da API - Conta Credito</h1>
     <p>Saldo:{{dashboard.contaCredito.saldo}}</p>
     <p>ID:{{dashboard.contaCredito.id}}</p>
@@ -49,7 +53,7 @@
     </div>
   </div> -->
 
-    <!-- Código abaixo lista todos os dados do API getPlanos
+<!-- Código abaixo lista todos os dados do API getPlanos
       <h1>Transação</h1>
     <div *ngFor="let conta of planoConta">
     <p>ID:{{conta.id}}</p>
@@ -58,4 +62,3 @@
     <p>Tipo de movimento:{{conta.tipoMovimento}}</p>
     <p>Padrão:{{conta.padrao}}</p>
   </div> -->
-</div>

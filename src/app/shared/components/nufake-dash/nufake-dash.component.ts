@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { pipe } from 'rxjs';
 import { take } from 'rxjs/operators';
 import { Dashboard } from '../../interfaces/Dashboard.interface';
@@ -14,11 +15,11 @@ import { NufakeDashService } from './nufake-dash.service';
   styleUrls: ['./nufake-dash.component.scss']
 })
 export class NufakeDashComponent implements OnInit {
+  arrowRight = "seta-acessar.svg"
+  dashboard: Dashboard
 
   cardList: CardListComponent;
   defaultCard: DefaultCardComponent;
-
-  dashboard: Dashboard
 
   constructor(
     private nufakeDash: NufakeDashService
@@ -33,17 +34,9 @@ export class NufakeDashComponent implements OnInit {
         response => this.dashboard = response
       )
 
-    // Chamando a API para getPlanosConta
-    //this.listaPlanos()
-
-    // Chamando a API para criação de plano
-    //valores pegos dos campos
-    //this.criaPlanos("Salario do mês", "mandre", "D")
-
-    // Chamando a API de lançamentos
-    //this.criaLancamento()
   }
 
+  //  **** LISTA PLANOS ****
   // listaPlanos() {
   //   planoConta: PlanoConta[]
   //   this.nufakeDash.getPlanosConta()
@@ -54,6 +47,8 @@ export class NufakeDashComponent implements OnInit {
   //     )
   // }
 
+  //  **** CRIA UM DEPOSITO ****
+  //   Esses valores são pegos dos campos de depósito
   // criaPlanos(descricao: string, login: string, tipoMovimento: string) {
   //   this.nufakeDash.planosConta({ descricao, login, tipoMovimento })
   //     .pipe(
@@ -64,9 +59,10 @@ export class NufakeDashComponent implements OnInit {
   //     )
   // }
 
+  //  **** FAZ TRANSFERÊNCIAS ****
   // criaLancamento() {
 
-  //   Esses valores são pegos dos campos dos lançamento
+  //   Esses valores são pegos dos campos da transferência
   //   this.nufakeDash.lancamentos({
   //     conta: 827,
   //     data: "2021-02-27",
@@ -94,5 +90,4 @@ export class NufakeDashComponent implements OnInit {
   // onErrorOnDashboard() {
   //   console.log("OOps!, algo de errado aconteceu")
   // }
-
 }
