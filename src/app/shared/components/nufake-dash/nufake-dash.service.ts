@@ -12,6 +12,7 @@ import { PlanoConta } from '../../interfaces/lancamento/planos-conta/PlanoConta.
 export class NufakeDashService {
   API_URL = environment.API_URL
 
+ 
   constructor(
     private http: HttpClient
   ) { }
