@@ -21,8 +21,6 @@ export class NufakeDashComponent implements OnInit {
 
   planoConta: PlanoConta[];
 
-  dashboard: Dashboard;
-
   constructor(
     private nufakeDash: NufakeDashService
   ) { }
