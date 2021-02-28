@@ -1,59 +1,62 @@
-@media(max-width:500px){
+@media(max-width:760px){
+  .layout-fundo{
+
+    &__gama-logo{
+        width: 70vw;
+    }
+
+    #__loginForm{
+      width: 90%;
+      height: 70%;
+
+    }
+
+    .formFields{
+      input, button{
+        width: 80vw;
+      }
+    }
+
+  }
+}
+
+.layout-fundo{
+  position: fixed;
+
+  display: flex;
+  flex-direction: column;
+
+  &__gama-logo{
+    display: flex;
+    align-items: flex-start;
+    padding: 2.4rem;
+
     img{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: auto;
+      max-width: 291px;
       width: 100%;
     }
 
-    .formButton{
-      display: flex;
-      flex-direction: column;
-    }
-
-    button > img{
-      display: none;
-    }
-
-}
-
-.container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  &__gama-logo{
-    width: 100vw;
-    display: flex;
-    justify-content: flex-start;
-    padding:4rem 4.3rem;
   }
 
   &__loginForm{
     display: flex;
-    flex-direction: column;
     align-items: center;
-
-    max-width: 455px;
-    max-height: 422px;
-    width: 60vw;
-    height: 48vh;
+    justify-content: center;
+    flex-direction: column;
 
     background: #FBFBFB;
     border-radius: 8px;
 
-    h2{
-      max-width: 360.79px;
-      max-height: 57.96px;
-      width: 22rem;
-      height: 4rem;
+    margin: 1rem auto;
 
-      font-size: 1.25rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 1.5rem;
+    padding: 1.5rem;
+
+    width: 24vw;
+
+    .title{
+      padding: 1em;
+      font-size: 1.5em;
+      font-weight: 500;
     }
 
     form{
@@ -63,61 +66,53 @@
       justify-content: center;
     }
 
-    input{
-      max-width: 352.78px;
-      width: 42vw;
-      height: 2rem;
-      margin-bottom: 11%;
-      font-size: 0.8rem;
+    .formInput{
+      width: 20vw;
+      height: 2em;
+
+      margin-bottom: 10%;
 
       border: none;
-      border-bottom: 1px solid #878686;
+      border-bottom: 2px solid #878686;
+
+      transition: border-color 0.5s;
     }
 
-    ::placeholder {
-      color: #878686;
-    }
-
-    :-ms-input-placeholder {
-      color: #878686;
-    }
-
-    ::-ms-input-placeholder {
-      color: #878686;
+    input:focus{
+      border-color:  #8C52E6;
     }
 
     .formButton{
+      width: 20vw;
+      height: 3.4em;
+
+      margin-bottom: 8%;
+
+      text-align: center;
+
+      border: 2px #8C52E5 solid;
+      color: #8C52E5;
+
       display: flex;
-      align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
 
-      max-width: 360.79px;
-      width: 42vw;
-
-      height: 5vh;
-
-      background: #68DE5A;
-
-      border: none;
-      border-radius: 20px;
-
-      cursor: pointer;
+      padding: 0.8em;
+      border-radius: 30px;
 
       &__text{
-        max-width: 360.79px;
-        color: #fff;
-        font-weight: 500;
-        margin:0 15px;
+        width: 10vw;
+        text-align: left;
       }
 
-      transition: background 0.2s;
+      img{
+        width: 5vw;
+        height: 1.2em;
+      }
+
+      transition: background-color 0.8s;
     }
 
-    .formButton > img{
-      margin:0 15px;
-    }
-
-    button:hover{
+    .formButton:hover{
       background-color: #47d138;
     }
 
@@ -125,15 +120,14 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-around;
-      padding: 1rem;
+      justify-content: center;
+
+      font-weight: 500;
 
       a{
-        margin:0.2rem;
-        text-decoration: none;
-        font-size: 0.8em;
-        color: #8C52E5;
-       }
+        margin-bottom: 1em;
+      }
     }
   }
+
 }

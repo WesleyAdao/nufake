@@ -15,7 +15,7 @@ export class NufakeLoginComponent implements OnInit {
   senha: string;
   userLogin: Login;
   imageLogo = "gama-academy-logo-horizontal-verde-branco1 1.svg"
-  arrowRight = "arrow-right.svg"
+  arrowRight = "seta-acessar.svg"
 
   constructor(
     private nufakeLoginService: NufakeLoginService,
