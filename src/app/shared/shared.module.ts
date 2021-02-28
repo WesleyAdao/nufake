@@ -2,12 +2,10 @@ import { CommonModule } from '@angular/common';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { RouterModule } from '@angular/router';
 
 import { CardListComponent } from './components/card-list/card-list.component';
-import { CardComponent } from './components/card/card.component';
 import { DefaultCardComponent } from './components/default-card/default-card.component';
 import { NufakeDashComponent } from './components/nufake-dash/nufake-dash.component';
 import { NufakeErrorComponent } from './components/nufake-error/nufake-error.component';
@@ -22,6 +20,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatMenuModule} from '@angular/material/menu';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { MatCardModule } from '@angular/material/card';
 
 
 
@@ -37,7 +36,6 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     CardListComponent,
     DefaultCardComponent,
     SidebarComponent,
-    CardComponent
   ],
   imports: [
     CommonModule,
@@ -53,6 +51,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     MatMenuModule,
     MatCardModule,
 
+
   ],
   exports: [
     NufakeHomeComponent,
@@ -62,7 +61,6 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     NufakeDashComponent,
     DefaultCardComponent,
     CardListComponent,
-    CardComponent,
     SidebarComponent
   ],
   providers: [

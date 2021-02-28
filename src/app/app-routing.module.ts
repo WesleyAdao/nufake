@@ -18,7 +18,7 @@ const routes: Routes = [
   },
   {
     path: 'dashboard', component: NufakeDashComponent,
-    canActivate: [IsNotLoggedGuard]
+    canActivate: [LoggedInGuard]
   },
   {
     path: 'recovery', component: NufakeRecoverypassComponent,

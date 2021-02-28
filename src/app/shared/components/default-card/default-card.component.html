@@ -1,65 +1,49 @@
-<!-- <mat-list class="sidebar">
-  <mat-list-item>Depósitos</mat-list-item>
-  <mat-list-item> Planos </mat-list-item>
-  <mat-list-item> Pagamentos </mat-list-item>
-  <mat-list-item> Transações </mat-list-item>
-</mat-list> -->
-
 <div class="dashboard-body">
-  <div class="cards-wrapper">
+  <div class="dashboard-body__cards-wrapper">
     <!-- card conta -->
-    <mat-card class="default-card-conta"><img src="./assets/Group.svg" class="vetorCard1">
-      <mat-card-header cols="10">
-        <mat-grid-tile [colspan]="1" [rowspan]="2">
-          <img class="vetorConta" src="./assets/credit-card1.svg" alt="Vetor da conta">
-        </mat-grid-tile>
-        <mat-grid-tile [colspan]="9" [rowspan]="1">
-          Conta
-        </mat-grid-tile>
-        <mat-grid-tile [colspan]="9" [rowspan]="1">
-          saldo disponivel
-        </mat-grid-tile>
-
-        <div mat-card-avatar class="{{iconeCardConta}}"></div>
-        <mat-card-title>{{titulo}}</mat-card-title>
-        <mat-card-subtitle>{{subtitulo}}</mat-card-subtitle>
+    <mat-card class="dashboard-body__card-conta">
+      <img src="./assets/Group.svg" class="card-conta-credito__vetor">
+      <mat-card-title class="cards__titulo">Conta</mat-card-title>
+      <mat-card-header>
       </mat-card-header>
       <mat-card-content>
-        <div class="valor1">R$: {{valor1}}</div>
-        <div class="labelValor">{{labelValor}}</div>
-        <div class="valor2">R$: {{valor2}}</div>
+        <div class="cards__subtitulo">Saldo disponivel</div>
+        <div class="card-conta__saldo-disponivel">R$: {{ dashboard.contaBanco.saldo }}</div>
       </mat-card-content>
+      <div class="card__label-valores">Transações</div>
+      <div class="card__valor-transacoes-limite">R$: {{ dashboard.contaBanco.saldo }}</div>
     </mat-card>
 
     <!-- card conta credito  -->
 
-    <mat-card class="default-card-credito"><img src="./assets/credit-card1.svg" class="vetorCard2">
+    <mat-card class="dashboard-body__card-credito">
+      <img src="./assets/credit-card1.svg" class="card-conta-credito__vetor">
       <mat-card-header>
-        <div mat-card-avatar class="{{iconeCardCredito}}"></div>
-        <mat-card-title>{{tituloCredito}}</mat-card-title>
-        <mat-card-subtitle>{{subtituloCredito}}</mat-card-subtitle>
+        <mat-card-title class="cards__titulo">Conta crédito</mat-card-title>
       </mat-card-header>
       <mat-card-content>
-        <div class="valor3">R$: {{valor3}}</div>
-        <div class="labelValorCredito">{{labelValorCredito}}</div>
-        <div class="valor4">R$: {{valor2}}</div>
+        <div class="cards__subtitulo">Fatura atual</div>
+        <div class="card-credito__valor1">R$: {{dashboard.contaCredito.saldo}}</div>
       </mat-card-content>
+      <div class="card__label-valores">Limite disponível</div>
+      <div class="card__valor-transacoes-limite">R$: {{dashboard.contaCredito.saldo}}</div>
     </mat-card>
   </div>
 
   <!-- card dos lançamentos  -->
-  <div class="default-card-lancamentos">
-    <mat-card>
-      <img src="./assets/Group.svg" class="vetorCard3">
-      <img src="./assets/credit-card2.svg" class="vetorCartaoCard3">
+  <div>
+    <mat-card class="dashboard-body__card-lancamentos">
+      <img src="./assets/Group.svg" class="card-conta-credito__vetor">
+      <mat-card-title class="cards__titulo">Últimos lançamentos</mat-card-title>
+      <img src="./assets/credit-card2.svg" class="card-lancamentos__vetor">
       <mat-card-header>
-        <div mat-card-avatar class="{{iconeCardLancamentos}}"></div>
-        <mat-card-title>{{tituloLancamentos}}</mat-card-title>
-        <mat-card-subtitle>{{subtituloLancamentos}}</mat-card-subtitle>
       </mat-card-header>
-      <mat-card-content>
-        <div class="valor5">R$: {{valor5}}</div>
-        <div class="labelValorLancamentos">{{labelValorLancamentos}}</div>
+      <mat-card-content *ngFor="let lancamento of dashboard.contaCredito.lancamentos">
+        <div class="card-lancamentos__valor1">R$: {{lancamento.id}}</div>
+        <div class="labelValorLancamentos">{{lancamento.data}}</div>
+        <div class="labelValorLancamentos">{{lancamento.valor}}</div>
+        <div class="labelValorLancamentos">{{lancamento.conta}} </div>
+        <div class="labelValorLancamentos">{{lancamento.descricao }} </div>
       </mat-card-content>
     </mat-card>
   </div>

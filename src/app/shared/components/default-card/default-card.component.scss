@@ -1,34 +1,56 @@
-.cards-wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 40px;
-  padding-right: 80px;
-  width: 100%;
-}
-
 .dashboard-body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 30px;
 }
 
-// .sidebar {
-//   display: flex;
-//   flex-direction: column;
-//   width: 151px;
-//   height: 100%;
+.dashboard-body__cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+}
 
-//   background: #68de5a;
-// }
-//CARD CONTA
-.default-card-conta {
-  width: 40%;
+.cards__titulo {
+  margin-left: 60px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #9b9b9b;
+}
+
+.cards__subtitulo {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #9b9b9b;
+}
+
+.dashboard-body__card-conta {
+  margin-right: 40px;
+  margin-bottom: 30px;
+  width: 50%;
   height: 255.05px;
 
   background: #fbfbfb;
   border-radius: 8px;
 }
-.vetorCard1 {
+.card-conta-credito__vetor {
   left: 10%;
   right: 10%;
   top: 10%;
@@ -36,7 +58,7 @@
 
   color: #9b9b9b;
 }
-.labelValor {
+.card-conta__label-valor {
   width: 94px;
   height: 21px;
   left: 283px;
@@ -54,12 +76,8 @@
 
   color: #9b9b9b;
 }
-.valor1 {
-  width: 253px;
-  height: 54px;
-  left: 283px;
-  top: 264px;
-
+.card-conta__saldo-disponivel {
+  
   font-family: sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -70,13 +88,10 @@
 
   color: #010101;
 }
-.valor2 {
-  width: 185px;
-  height: 19px;
-  left: 429px;
-  top: 332px;
+.card__valor-transacoes-limite {
+  margin-left: 170px;
 
-  font-family: sans-serif;
+  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
@@ -88,8 +103,8 @@
   color: #68de5a;
 }
 
-.default-card-credito {
-  width: 40%;
+.dashboard-body__card-credito {
+  width: 50%;
   height: 255.05px;
 
   background: #fbfbfb;
@@ -97,32 +112,20 @@
 }
 
 @media only screen and (max-width: 1020px) {
-  .cards-wrapper {
+  .dashboard-body__cards-wrapper {
     flex-direction: column;
   }
-  .default-card-credito {
+  .dashboard-body__card-conta {
     width: 100%;
   }
-  .default-card-conta {
+  .dashboard-body__card-credito {
     width: 100%;
   }
 }
-.vetorCard2 {
-  position: initial;
-  padding-top: 25px;
-  width: 150px;
-  height: 47px;
-  left: 800px;
-  top: 145px;
 
-  color: #9b9b9b;
-}
-
-.tituloCredito {
+.card__label-valores {
   width: 110px;
   height: 21px;
-  left: 872px;
-  top: 186px;
 
   font-family: sans-serif;
   font-style: normal;
@@ -137,27 +140,7 @@
   color: #9b9b9b;
 }
 
-.subtituloCredito {
-  width: 96px;
-  height: 21px;
-  left: 791px;
-  top: 242px;
-
-  font-family: arial;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 21px;
-  /* identical to box height */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  color: #9b9b9b;
-}
-
-.labelValorCredito {
+.card-credito__label-valor {
   width: 136px;
   height: 21px;
   left: 789px;
@@ -168,7 +151,6 @@
   font-weight: normal;
   font-size: 17px;
   line-height: 21px;
-  /* identical to box height */
 
   display: flex;
   align-items: center;
@@ -177,7 +159,7 @@
   color: #9b9b9b;
 }
 
-.valor3 {
+.card-credito__valor1 {
   width: 324px;
   height: 29px;
   left: 789px;
@@ -194,7 +176,7 @@
   color: #1783e7;
 }
 
-.valor4 {
+.card-credito__valor2 {
   width: 185px;
   height: 19px;
   left: 934px;
@@ -212,31 +194,26 @@
   color: #68de5a;
 }
 
-.default-card-lancamentos {
-  margin-top: 20px;
+.dashboard-body__card-lancamentos {
+  margin-top: 30px;
+  margin-left: 40px;
   padding-top: 20px;
-  width: 100%;
-  height: 280px;
+  width: 95%;
+  height: 320px;
 
   background: #fbfbfb;
   border-radius: 8px;
 }
-.vetorCard3 {
-  right: 12%;
-  top: 9%;
-  bottom: 0%;
+
+.card-lancamentos__vetor {
+  left: 0%;
+  right: 10%;
+  top: 150%;
+  bottom: 120%;
 
   color: #9b9b9b;
 }
-.vetorCartaoCard3 {
-  width: 34px;
-  height: 34px;
-  left: 4%;
-  top: 25%;
-
-  color: #9b9b9b;
-}
-.tituloLancamentos {
+.card-lancamento-title {
   width: 170px;
   height: 21px;
   left: 343px;
@@ -285,7 +262,6 @@
   font-weight: normal;
   font-size: 11px;
   line-height: 14px;
-  /* identical to box height */
 
   display: flex;
   align-items: center;
@@ -314,7 +290,7 @@
   color: #9b9b9b;
 }
 
-.valor5 {
+.card-lancamentos__valor1 {
   width: 96px;
   height: 23px;
   left: 343px;
