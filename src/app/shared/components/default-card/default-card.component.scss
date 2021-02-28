@@ -1,39 +1,42 @@
-.default-card {
-  max-width: 0;
-
+.cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 80px;
+  width: 100%;
 }
 
-.propriedade{
-
-width: 151px;
-height: 900px;
-left: 0px;
-top: 0px;
-
-background: #68DE5A;
+.dashboard-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
+
+// .sidebar {
+//   display: flex;
+//   flex-direction: column;
+//   width: 151px;
+//   height: 100%;
+
+//   background: #68de5a;
+// }
 //CARD CONTA
-.default-card-conta{
-
-  width: 407.8px;
+.default-card-conta {
+  width: 40%;
   height: 255.05px;
-  left: 243px;
-  top: 0px;
 
-  background: #FBFBFB;
+  background: #fbfbfb;
   border-radius: 8px;
 }
-.vetorCard1{
+.vetorCard1 {
+  left: 10%;
+  right: 10%;
+  top: 10%;
+  bottom: 0%;
 
-left: 10%;
-right: 10%;
-top: 10%;
-bottom: 0%;
-
-color: #9B9B9B;
+  color: #9b9b9b;
 }
 .labelValor {
-
   width: 94px;
   height: 21px;
   left: 283px;
@@ -49,10 +52,9 @@ color: #9B9B9B;
   align-items: center;
   text-align: center;
 
-  color: #9B9B9B;
+  color: #9b9b9b;
 }
 .valor1 {
-
   width: 253px;
   height: 54px;
   left: 283px;
@@ -69,7 +71,6 @@ color: #9B9B9B;
   color: #010101;
 }
 .valor2 {
-
   width: 185px;
   height: 19px;
   left: 429px;
@@ -84,20 +85,29 @@ color: #9B9B9B;
   align-items: center;
   text-align: right;
 
-  color: #68DE5A;
+  color: #68de5a;
 }
 
-.default-card-credito{
-
-  width: 407.8px;
+.default-card-credito {
+  width: 40%;
   height: 255.05px;
-  left: 747.2px;
-  top: 145px;
 
-  background: #FBFBFB;
+  background: #fbfbfb;
   border-radius: 8px;
 }
-.vetorCard2{
+
+@media only screen and (max-width: 1020px) {
+  .cards-wrapper {
+    flex-direction: column;
+  }
+  .default-card-credito {
+    width: 100%;
+  }
+  .default-card-conta {
+    width: 100%;
+  }
+}
+.vetorCard2 {
   position: initial;
   padding-top: 25px;
   width: 150px;
@@ -105,11 +115,10 @@ color: #9B9B9B;
   left: 800px;
   top: 145px;
 
-  color: #9B9B9B;
+  color: #9b9b9b;
 }
 
-.tituloCredito{
-
+.tituloCredito {
   width: 110px;
   height: 21px;
   left: 872px;
@@ -125,12 +134,10 @@ color: #9B9B9B;
   align-items: center;
   text-align: center;
 
-  color: #9B9B9B;
-
+  color: #9b9b9b;
 }
 
-.subtituloCredito{
-
+.subtituloCredito {
   width: 96px;
   height: 21px;
   left: 791px;
@@ -147,11 +154,10 @@ color: #9B9B9B;
   align-items: center;
   text-align: center;
 
-  color: #9B9B9B;
+  color: #9b9b9b;
 }
 
 .labelValorCredito {
-
   width: 136px;
   height: 21px;
   left: 789px;
@@ -168,11 +174,10 @@ color: #9B9B9B;
   align-items: center;
   text-align: center;
 
-  color: #9B9B9B;
+  color: #9b9b9b;
 }
 
 .valor3 {
-
   width: 324px;
   height: 29px;
   left: 789px;
@@ -186,12 +191,10 @@ color: #9B9B9B;
   display: flex;
   align-items: center;
 
-  color: #1783E7;
-
+  color: #1783e7;
 }
 
 .valor4 {
-
   width: 185px;
   height: 19px;
   left: 934px;
@@ -206,40 +209,34 @@ color: #9B9B9B;
   align-items: center;
   text-align: right;
 
-  color: #68DE5A;
-
+  color: #68de5a;
 }
 
 .default-card-lancamentos {
-
-  padding-top: 8%;
-  width: 907.55px;
+  margin-top: 20px;
+  padding-top: 20px;
+  width: 100%;
   height: 280px;
-  left: 247.45px;
-  top: 450px;
 
-  background: #FBFBFB;
+  background: #fbfbfb;
   border-radius: 8px;
 }
-.vetorCard3{
+.vetorCard3 {
+  right: 12%;
+  top: 9%;
+  bottom: 0%;
 
-right: 12%;
-top: 9%;
-bottom: 0%;
-
-color: #9B9B9B;
+  color: #9b9b9b;
 }
-.vetorCartaoCard3{
+.vetorCartaoCard3 {
+  width: 34px;
+  height: 34px;
+  left: 4%;
+  top: 25%;
 
-width: 34px;
-height: 34px;
-left: 4%;
-top: 25%;
-
-color: #9B9B9B;
+  color: #9b9b9b;
 }
 .tituloLancamentos {
-
   width: 170px;
   height: 21px;
   left: 343px;
@@ -255,11 +252,10 @@ color: #9B9B9B;
   align-items: center;
   text-align: center;
 
-  color: #9B9B9B;
+  color: #9b9b9b;
 }
 
-.subtituloLancamentos{
-
+.subtituloLancamentos {
   width: 128px;
   height: 19px;
   left: 343px;
@@ -271,7 +267,6 @@ color: #9B9B9B;
   font-size: 14px;
   line-height: 19px;
 
-
   display: flex;
   align-items: center;
   text-align: center;
@@ -280,7 +275,6 @@ color: #9B9B9B;
 }
 
 .data {
-
   width: 79px;
   height: 14px;
   left: 1027px;
@@ -297,12 +291,10 @@ color: #9B9B9B;
   align-items: center;
   text-align: center;
 
-  color: #9B9B9B;
-
+  color: #9b9b9b;
 }
 
 .labelValorLancamentos {
-
   width: 123px;
   height: 21px;
   left: 343px;
@@ -319,12 +311,10 @@ color: #9B9B9B;
   align-items: center;
   text-align: center;
 
-  color: #9B9B9B;
-
+  color: #9b9b9b;
 }
 
 .valor5 {
-
   width: 96px;
   height: 23px;
   left: 343px;
@@ -342,23 +332,21 @@ color: #9B9B9B;
   color: #000000;
 }
 
+.elipse1Principal {
+  position: absolute;
+  width: 47px;
+  height: 47px;
+  left: 1108px;
+  top: 61px;
+  border-radius: 50px;
 
-
-.elipse1Principal{
-    position: absolute;
-    width: 47px;
-    height: 47px;
-    left: 1108px;
-    top: 61px;
-    border-radius: 50px;
-
-    background: #68DE5A;
-  }
-  .hiddenPrincipal{
+  background: #68de5a;
+}
+.hiddenPrincipal {
   position: absolute;
   width: 26.25px;
   height: 19.69px;
   left: 1118.16px;
   top: 74.97px;
-  color: #8C52E5
-  }
+  color: #8c52e5;
+}

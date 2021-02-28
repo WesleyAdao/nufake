@@ -1,78 +1,31 @@
 .sidebar {
-  position: absolute;
   width: 151px;
-  height: 900px;
-  left: 0px;
-  top: 0px;
+  height: 100vh;
 
-background: #63dc3f;
+
+  background: #63dc3f;
 }
-.pix{
-position: absolute;
-left: 2.92%;
-right: 95.20%;
-top: 35%;
-bottom: 73.2%;
+.sidebar__vetor-pix img {
+ width: 28px;
 
-transform: matrix(1, 0, 0, -1, 0, 0);
-}
-
-.sidebar img {
-  position: absolute;
-  width: 125px;
-  height: 125px;
-  left: 13px;
-  top: 20px;
 }
 
 
-.retangulo1 {
-  position: absolute;
+
+.sidebar__blocks {
+  
   width: 91px;
   height: 91px;
   left: 30px;
   top: 170px;
 
-  background: #8C52E5;
+  background: #8c52e5;
   border-radius: 5px;
 }
 
 
-.retangulo2 {
-  position: absolute;
-  width: 91px;
-  height: 91px;
-  left: 30px;
-  top: 286px;
-
-  background: #8C52E5;
-  border-radius: 5px;
-}
-
-.retangulo3 {
-  position: absolute;
-  width: 91px;
-  height: 91px;
-  left: 30px;
-  top: 402px;
-
-  background: #8C52E5;
-  border-radius: 5px;
-}
-
-.retangulo4 {
-  position: absolute;
-  width: 91px;
-  height: 91px;
-  left: 30px;
-  top: 518px;
-
-  background: #8C52E5;
-  border-radius: 5px;
-}
-
-a {
-  position: absolute;
+.sidebar__links {
+  
   width: 63px;
   height: 17px;
   left: 7px;
@@ -88,5 +41,11 @@ a {
   text-align: center;
   text-decoration: none;
 
-  color: #FFFFFF;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 1020px) {
+  .sidebar {
+    display: none;
+  }
 }

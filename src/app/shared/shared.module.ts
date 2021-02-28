@@ -14,8 +14,17 @@ import { NufakeErrorComponent } from './components/nufake-error/nufake-error.com
 import { NufakeHomeComponent } from './components/nufake-home/nufake-home.component';
 import { NufakeLoginComponent } from './components/nufake-login/nufake-login.component';
 import { NufakeRecoverypassComponent } from './components/nufake-recoverypass/nufake-recoverypass.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { AuthInterceptor } from './interceptors/auth.interceptor';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatIconModule} from '@angular/material/icon';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatMenuModule} from '@angular/material/menu';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+
+
+
 
 
 @NgModule({
@@ -35,8 +44,15 @@ import { AuthInterceptor } from './interceptors/auth.interceptor';
     RouterModule,
     FormsModule,
     ReactiveFormsModule,
-    MatCardModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
     MatListModule,
+    MatGridListModule,
+    MatMenuModule,
+    MatCardModule,
+
   ],
   exports: [
     NufakeHomeComponent,

@@ -1,26 +1,22 @@
-.background {
-  position: absolute;
-  width: 1440px;
-  height: 900px;
-  left: 0px;
-  top: 0px;
+.app-default-card {
+  display: flex;
+}
 
+.dashboard-page {
+  display: flex;
+}
+
+.background {
   background: #8C52E5;
 }
 
 h2 {
-  position: absolute;
-  width: 290px;
-  height: 26px;
-  left: 243px;
-  top: 71px;
 
   font-family: Arial;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
   line-height: 26px;
-  /* identical to box height */
 
   display: flex;
   align-items: center;
@@ -29,12 +25,6 @@ h2 {
 }
 
 .limite {
-  position: absolute;
-  width: 136px;
-  height: 21px;
-  left: 789px;
-  top: 338px;
-
   color: #9B9B9B;
   font-family: arial;
   font-style: normal;
