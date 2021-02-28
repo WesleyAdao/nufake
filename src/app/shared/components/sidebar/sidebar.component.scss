@@ -1,92 +1,53 @@
 .sidebar {
-  position: absolute;
   width: 151px;
-  height: 900px;
-  left: 0px;
-  top: 0px;
+  height: 100%;
 
-background: #63dc3f;
-}
-.pix{
-position: absolute;
-left: 2.92%;
-right: 95.20%;
-top: 35%;
-bottom: 73.2%;
-
-transform: matrix(1, 0, 0, -1, 0, 0);
+  background: #63dc3f;
 }
 
-.sidebar img {
-  position: absolute;
+.sidebar__img {
   width: 125px;
   height: 125px;
-  left: 13px;
+  margin-left: 13px;
   top: 20px;
+  margin-bottom: 35px;
 }
 
+.sidebar__vetor-pix {
+  width: 28px;
+  margin-left: 6px;
+  margin-top: 6px;
+}
 
-.retangulo1 {
-  position: absolute;
+.sidebar__blocks {
   width: 91px;
   height: 91px;
-  left: 30px;
-  top: 170px;
+  margin-left: 27px;
+  margin-bottom: 15px;
 
-  background: #8C52E5;
+  background: #8c52e5;
   border-radius: 5px;
 }
 
-
-.retangulo2 {
-  position: absolute;
-  width: 91px;
-  height: 91px;
-  left: 30px;
-  top: 286px;
-
-  background: #8C52E5;
-  border-radius: 5px;
-}
-
-.retangulo3 {
-  position: absolute;
-  width: 91px;
-  height: 91px;
-  left: 30px;
-  top: 402px;
-
-  background: #8C52E5;
-  border-radius: 5px;
-}
-
-.retangulo4 {
-  position: absolute;
-  width: 91px;
-  height: 91px;
-  left: 30px;
-  top: 518px;
-
-  background: #8C52E5;
-  border-radius: 5px;
-}
-
-a {
-  position: absolute;
-  width: 63px;
-  height: 17px;
-  left: 7px;
-  top: 65px;
-
-  font-family: sans-serif;
+.sidebar__links {
+  margin-top: 35px;
+margin-left: 5px;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
+
   display: flex;
   align-items: center;
   text-align: center;
   text-decoration: none;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
+
+// @media only screen and (max-width: 1020px) {
+//   .sidebar {
+//     display: none;
+//   }
+// }

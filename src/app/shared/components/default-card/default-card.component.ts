@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Dashboard } from '../../interfaces/Dashboard.interface';
 
 @Component({
   selector: 'app-default-card',
@@ -7,29 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DefaultCardComponent implements OnInit {
 
-  iconeCardConta = 'default-header-conta';
-  titulo = 'Conta';
-  subtitulo = 'Saldo Disponivel';
-  labelValor = 'Transações:';
-  valor1 = '10.000,00';
-  valor2 = '2.120,21';
-
-  iconeCardCredito = 'default-header-credito';
-  tituloCredito = 'Conta Credito';
-  subtituloCredito = 'Fatura atual';
-  labelValorCredito = 'Limite disponivel';
-  valor3 = '120,88';
-  valor4 = '9.120,88';
-
-  iconeCardLancamentos = 'default-header-lancamento';
-  tituloLancamentos = 'Ultimos lançamentos';
-  subtituloLancamentos = 'Compra no débito';
-  labelValorLancamentos = 'GamaAcademy';
-  valor5 = '120,88';
+  @Input() dashboard: Dashboard;
+  
 
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.dashboard)
   }
 
 }
