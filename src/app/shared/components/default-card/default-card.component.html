@@ -1,7 +1,7 @@
-<div class="dashboard-body">
+<div class="dashboard-body" *ngIf="dashboard">
   <div class="dashboard-body__cards-wrapper">
     <!-- card conta -->
-    <mat-card class="dashboard-body__card-conta">
+    <mat-card  class="dashboard-body__card-conta">
       <img src="./assets/Group.svg" class="card-conta-credito__vetor">
       <mat-card-title class="cards__titulo">Conta</mat-card-title>
       <mat-card-header>
@@ -21,7 +21,7 @@
       <mat-card-header>
         <mat-card-title class="cards__titulo">Conta crédito</mat-card-title>
       </mat-card-header>
-      <mat-card-content>
+      <mat-card-content >
         <div class="cards__subtitulo">Fatura atual</div>
         <div class="card-credito__valor1">R$: {{dashboard.contaCredito.saldo}}</div>
       </mat-card-content>
@@ -31,8 +31,8 @@
   </div>
 
   <!-- card dos lançamentos  -->
-  <div>
-    <mat-card class="dashboard-body__card-lancamentos">
+  <div >
+    <mat-card  class="dashboard-body__card-lancamentos">
       <img src="./assets/Group.svg" class="card-conta-credito__vetor">
       <mat-card-title class="cards__titulo">Últimos lançamentos</mat-card-title>
       <img src="./assets/credit-card2.svg" class="card-lancamentos__vetor">
