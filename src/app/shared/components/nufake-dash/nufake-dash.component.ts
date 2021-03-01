@@ -32,8 +32,9 @@ export class NufakeDashComponent implements OnInit {
       .pipe(
         take(1)
       ).subscribe(
-        response => { this.dashboard = response;
-        console.log(response);
+        response => {
+          this.dashboard = response;
+          console.log(response);
         }
       );
 
@@ -49,6 +50,7 @@ export class NufakeDashComponent implements OnInit {
     // Chamando a API de lançamentos
     //this.criaLancamento()
   }
+
 
   listaPlanos() {
     this.nufakeDash.getPlanosConta()

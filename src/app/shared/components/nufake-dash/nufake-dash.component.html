@@ -8,7 +8,63 @@
 </div>
 
 
-<!-- ABAIXO COMO OS VALORES DE CONTA PODEM SER MOSTRADOS NA TELA
+
+<!-- TEMPLATE DO CAMPO DE TRANSFERÊNCIA ABAIXO
+
+<div class="layout-fundo">
+
+  <div class="layout-fundo__loginForm" id="__loginForm">
+    <div class="title">
+      <p>Informe os dados para realizar sua transferência</p>
+    </div>
+
+    <form class="formFields">
+
+      <input class="formInput" type="text" name="description" placeholder="Login do destinatário">
+      <input class="formInput" type="date" name="calendar">
+      <input class="formInput" type="text" name="description" placeholder="Descrição">
+      <input class="formInput" type="text" name="transfValue" placeholder="Qual o valor da transferência?">
+
+      <button type="submit" onsubmit="criaPlanos()" class="formButton">
+        <p class="formButton__text">Transferir agora</p>
+        <img src="assets/{{arrowRight}}" alt="arrow right">
+
+      </button>
+
+    </form>
+  </div>
+
+</div> -->
+
+<!-- TRECHO ABAIXO É REFERENTE AO DEPÓSITO
+<div class="layout-fundo">
+
+  <div class="layout-fundo__loginForm" id="__loginForm">
+    <div class="title">
+      <p>Realize seu depósito</p>
+    </div>
+
+    <form class="formFields">
+
+      <input class="formInput" type="date" name="calendar">
+      <input class="formInput" type="text" name="description" placeholder="Descrição">
+      <input class="formInput" type="text" name="transfValue" placeholder="Qual o valor da transferência?">
+
+      <button type="submit" onsubmit="criaPlanos()" class="formButton">
+        <p class="formButton__text">Transferir agora</p>
+        <img src="assets/{{arrowRight}}" alt="arrow right">
+
+      </button>
+
+    </form>
+  </div>
+
+</div>-->
+
+
+<!-- FIM DO FORMULÁRIO DE DEPÓSITO
+
+  ABAIXO COMO OS VALORES DE CONTA PODEM SER MOSTRADOS NA TELA
   <div *ngIf="dashboard">
     <h1>Dados da API - Conta Banco</h1>
     <p>Saldo:{{dashboard.contaBanco.saldo}}</p>
