@@ -4,13 +4,14 @@ import { NufakeDashComponent } from './shared/components/nufake-dash/nufake-dash
 import { NufakeErrorComponent } from './shared/components/nufake-error/nufake-error.component';
 import { NufakeHomeComponent } from './shared/components/nufake-home/nufake-home.component';
 import { NufakeLoginComponent } from './shared/components/nufake-login/nufake-login.component';
+import { NufakeNewpassComponent } from './shared/components/nufake-newpass/nufake-newpass.component';
 import { NufakeRecoverypassComponent } from './shared/components/nufake-recoverypass/nufake-recoverypass.component';
 import { IsNotLoggedGuard } from './shared/guards/is-not-logged.guard';
 import { LoggedInGuard } from './shared/guards/logged-in.guard';
 
 const routes: Routes = [
   {
-    path: 'home', component: NufakeHomeComponent
+    path: 'home', component: NufakeHomeComponent,
   },
   {
     path: 'login', component: NufakeLoginComponent,
@@ -22,6 +23,10 @@ const routes: Routes = [
   },
   {
     path: 'recovery', component: NufakeRecoverypassComponent,
+    canActivate: [IsNotLoggedGuard]
+  },
+  {
+    path: 'changepass', component: NufakeNewpassComponent,
     canActivate: [IsNotLoggedGuard]
   },
   {

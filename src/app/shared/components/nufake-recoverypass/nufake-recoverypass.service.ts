@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment.prod';
 import { Login } from '../../interfaces/login/Login.interface';
+import { NovaSenha } from '../../interfaces/login/NovaSenha.interface';
 
 interface NewPassword {
   email: string;
@@ -17,6 +18,7 @@ export class NufakeRecoverypassService {
 
   newPassword: NewPassword;
   login: Login;
+  temporaryPassword:string;
 
   API_URL = environment.API_URL
 
@@ -26,24 +28,24 @@ export class NufakeRecoverypassService {
   ) { }
 
 
-  solicitarNovaSenha(): Observable<string> {
+  solicitarNovaSenha({ login, email }:NovaSenha): Observable<string> {
 
     this.newPassword = {
-      email: "email@dominio.com",
-      login: "mandre"
+      email,
+      login,
     }
 
     return this.http.post<string>(`${this.API_URL}/nova-senha`, this.newPassword)
   }
 
-  alterarSenha(senhaTemporaria: string) {
+  alterarSenha({ usuario, senha }: Login) {
     this.login = {
-      senha: "senha123",
-      usuario: "mandre"
+      usuario,
+      senha,
     }
 
     const httpParams = new HttpParams({
-      fromString: `senhaTemporaria=${senhaTemporaria}`
+      fromString: `senhaTemporaria=${this.temporaryPassword}`
     })
     const url = `${this.API_URL}/altera-senha`
 
@@ -60,5 +62,9 @@ export class NufakeRecoverypassService {
 
   recoveryError() {
     alert("Ocorreu um erro durante a recuperação de senha, por favor tente novamente");
+  }
+
+  storeTemporaryPassword(senhaTemporaria: string):void{
+    this.temporaryPassword = senhaTemporaria
   }
 }

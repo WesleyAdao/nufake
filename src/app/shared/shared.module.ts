@@ -21,10 +21,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatMenuModule} from '@angular/material/menu';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { MatCardModule } from '@angular/material/card';
-
-
-
-
+import { NufakeNewpassComponent } from './components/nufake-newpass/nufake-newpass.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +33,7 @@ import { MatCardModule } from '@angular/material/card';
     CardListComponent,
     DefaultCardComponent,
     SidebarComponent,
+    NufakeNewpassComponent,
   ],
   imports: [
     CommonModule,
@@ -61,6 +59,7 @@ import { MatCardModule } from '@angular/material/card';
     NufakeDashComponent,
     DefaultCardComponent,
     CardListComponent,
+    NufakeNewpassComponent,
     SidebarComponent
   ],
   providers: [

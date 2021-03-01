@@ -13,13 +13,13 @@ import { NufakeDashService } from './nufake-dash.service';
   styleUrls: ['./nufake-dash.component.scss']
 })
 export class NufakeDashComponent implements OnInit {
+  arrowRight = "seta-acessar.svg"
+  dashboard: Dashboard
 
   cardList: CardListComponent;
   defaultCard: DefaultCardComponent;
 
   planoConta: PlanoConta[];
-
-  dashboard: Dashboard;
 
   constructor(
     private nufakeDash: NufakeDashService
@@ -32,22 +32,22 @@ export class NufakeDashComponent implements OnInit {
       .pipe(
         take(1)
       ).subscribe(
-        response => { this.dashboard = response; 
+        response => { this.dashboard = response;
         console.log(response);
         }
       );
 
-      
+
 
     // Chamando a API para getPlanosConta
-    this.listaPlanos()
+    //this.listaPlanos()
 
     // Chamando a API para criação de plano
     // valores pegos dos campos
-    this.criaPlanos("Salario do mês", "mandre", "D")
+    //this.criaPlanos("Salario do mês", "mandre", "D")
 
     // Chamando a API de lançamentos
-    this.criaLancamento()
+    //this.criaLancamento()
   }
 
   listaPlanos() {

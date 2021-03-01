@@ -1,32 +1,31 @@
 <div class="layout-fundo">
-  <img class="logo" src="../../assets/logo-gama.png">
-  <div class="card">
-    <div class="container">
-      <br>
-      <h4 class="texts"><b>Esqueci minha senha</b></h4>
-      <p class="texts" id="text">Confirme seu CPF e escolha sua nova senha</p>
-      <section>
-        <form [formGroup]="formRecovery">
-          <div class="input-container">
-            <label class="label" for="name">
-              <input id="name" class="input" type="text" placeholder="Digite seu CPF" pattern=".+" formControlName="cpf" required />
-            </label><br>
-          </div>
-          <br>
-          <div class="input-container">
-            <label class="label" for="name">
-              <input id="name" class="input" type="text" placeholder="Digite sua nova senha" pattern=".+" formControlName="senha" required />
-            </label><br>
-          </div>
-          <br>
-          <div class="input-container">
-            <label class="label" for="name">
-              <input id="name" class="input" type="text" pattern=".+" placeholder="Digite novamente a senha" formControlName="senhaRepete" required />
-            </label><br><br>
-          </div>
-          <button (click)="enviarForm()" class="button">Enviar&#8680;</button>
-        </form>
-      </section>
-    </div>
+
+  <div class="layout-fundo__gama-logo">
+    <img src="assets/{{imageLogo}}" alt="Gama Academy logo">
   </div>
+
+  <div class="layout-fundo__loginForm" id="__loginForm">
+    <div class="title">
+      <p>Esqueci minha senha</p>
+      <h6>Confirme seu seu nome de usuário e email. Em seguida você receberá uma senha provisória</h6>
+    </div>
+
+    <form #form="ngForm" (ngSubmit)="onSubmit(form)" class="formFields">
+
+      <input class="formInput" type="text" name="usuario" [(ngModel)]="login" placeholder="Seu nome de usuário">
+      <input class="formInput" type="email" name="email" [(ngModel)]="email" placeholder="Seu email cadastrado">
+
+      <button type="submit" class="formButton">
+        <p class="formButton__text">Redefinir senha</p>
+        <img src="assets/{{arrowRight}}" alt="arrow right">
+
+      </button>
+
+      <div class="links">
+        <a routerLink="../home">Ainda não sou cliente -></a>
+      </div>
+
+    </form>
+  </div>
+
 </div>

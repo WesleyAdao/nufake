@@ -1,27 +1,62 @@
 # Nufake
+### <div align="right">🟢Status: finalizado😊 </div>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.0.
+## Descrição do Projeto
+<div align="center">Projeto com intuito simular acesso a uma aplicação financeira, realizar transações, depósitos e listagem de planos.</div>
+<br><br>
 
-## Development server
+## <div align="center">SUMÁRIO</div>
+#### <div align="center">============</div>
+<!--ts-->
+* [Pré Requisitos](#Pre-requisitos)
+* [Instalação](#Instalação)
+* [Tecnologias utilizadas](#tecnologias)
+* [Desenvolvedores envolvidos](#Desenvolvedores)
+* [Desmonstração do projeto](#Desmonstração)
+<!--te-->
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+ ## Pre-requisitos
+<div align="center"> Para executar a aplicação é necessário algumas ferramentas pré-instaladas.</div>
 
-## Code scaffolding
+* [Visual Studio Code](https://code.visualstudio.com/) : editor de código para executá-los
+* [Node.js](https://nodejs.org/en/) : interpretador de arquivos JS
+* [Git](https://git-scm.com) : para copiar o repositório de um modo mais automatizado
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instalação
+### <div align="center">Download e instalação do projeto </div>
 
-## Build
+```bash
+# Clone este repositório
+$ git clone https://github.com/WesleyAdao/nufake
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+# Acesse a pasta do projeto no terminal/cmd
+$ cd nufake
 
-## Running unit tests
+# Instale as dependências
+$ yarn ou npm -i
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Inicie a aplicação no lado do backend
+$ ng serve
 
-## Running end-to-end tests
+# O servidor inciará na porta:4200 - acesse <http://localhost:4200>
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Tecnologias
+<div align="center"> Nesse projeto foi utilizado as seguintes tecnologias</div>
 
-## Further help
+- [Node.js](https://nodejs.org/en/)
+- [Angular](https://angular.io/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Material Angular](https://material.angular.io/guide/getting-started)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Desenvolvedores
+### <div align="center">Desenvolvedores envolvidos no projeto</div>
+#### - Wesley do Nascimento Adão
+#### - José Humberto Nunes Ferreira Júnior
+#### - Kelvin Kleynar Eloi Teixeira Santos
+#### - Makson Emmanuel Araújo de Oliveira
+#### - Ricardo Nagatomy
+
+ ## Desmonstração
+ Eis aqui uma demonstração real do projeto: http://nufake.netlify.app
