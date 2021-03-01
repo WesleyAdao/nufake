@@ -15,11 +15,31 @@
         <div class="container__cadForm">
             <form #formHome="ngForm" (ngSubmit)="onSubmit(formHome)">
                 <p class="titleForm">Peça sua conta e cartão de crédito do Gama Bank</p>
-                <input type="text" name="cpf" placeholder="Digite seu CPF" [(ngModel)]="cpf" />
-                <input type="text" name="login" placeholder="Escolha um nome de usuário" [(ngModel)]="login" />
-                <input type="text" name="nome" placeholder="Nome completo" [(ngModel)]="nome" />
-                <input type="password" name="senha" placeholder="Digite sua senha" [(ngModel)]="inputSenha" />
-                <input type="password" name="cSenha" placeholder="Confirme sua senha" [(ngModel)]="confirmaSenha" />
+                <input 
+                    type="text" 
+                    name="cpf" 
+                    placeholder="Digite seu CPF" 
+                    [(ngModel)]="cpf" />
+                <input 
+                    type="text" 
+                    name="login" 
+                    placeholder="Escolha um nome de usuário" 
+                    [(ngModel)]="login" />
+                <input 
+                    type="text" 
+                    name="nome" 
+                    placeholder="Nome completo" 
+                    [(ngModel)]="nome" />
+                <input 
+                    type="password" 
+                    name="senha" 
+                    placeholder="Digite sua senha" 
+                    [(ngModel)]="senha" />
+                <input 
+                    type="password" 
+                    name="cSenha" 
+                    placeholder="Confirme sua senha" 
+                    [(ngModel)]="confirmaSenha" />
                 <button type="submit" class="formButton">
                     <p class="formButton__text">Continuar</p> <img src="../../assets/seta-continuar.svg">
                 </button>
