@@ -1,7 +1,7 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environment } from 'src/environments/environment.prod';
+import { environment } from 'src/environments/environment';
 import { Dashboard } from '../../interfaces/Dashboard.interface';
 import { LancamentoDTO } from '../../interfaces/lancamento/LancamentoDTO.interface';
 import { PlanoConta } from '../../interfaces/lancamento/planos-conta/PlanoConta.interface';
@@ -12,7 +12,7 @@ import { PlanoConta } from '../../interfaces/lancamento/planos-conta/PlanoConta.
 export class NufakeDashService {
   API_URL = environment.API_URL
 
- 
+
   constructor(
     private http: HttpClient
   ) { }

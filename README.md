@@ -54,7 +54,7 @@ $ ng serve
 ### <div align="center">Desenvolvedores envolvidos no projeto</div>
 #### - Wesley do Nascimento Adão
 #### - José Humberto Nunes Ferreira Júnior
-#### - Kelvin Kleynar Eloi Teixeira Santos
+#### - Kelvin Kleyner Eloi Teixeira Santos
 #### - Makson Emmanuel Araújo de Oliveira
 #### - Ricardo Nagatomy
 

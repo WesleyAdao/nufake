@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { tap } from 'rxjs/operators';
-import { environment } from 'src/environments/environment.prod';
+import { environment } from 'src/environments/environment';
 import { Login } from '../../interfaces/login/Login.interface';
 import { Sessao } from '../../interfaces/Sessao.interface';
 import { AuthService } from '../../services/auth/auth.service';
