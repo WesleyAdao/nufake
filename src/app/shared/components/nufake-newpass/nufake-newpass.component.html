@@ -12,8 +12,8 @@
 
     <form #form="ngForm" (ngSubmit)="onSubmit(form)" class="formFields">
 
-      <input class="formInput" type="text" name="usuario" [(ngModel)]="login" placeholder="Seu nome de usuário">
-      <input class="formInput" type="email" name="email" [(ngModel)]="email" placeholder="Seu email cadastrado">
+      <input class="formInput" type="text" name="usuario" [(ngModel)]="usuario" placeholder="Seu nome de usuário">
+      <input class="formInput" type="email" name="email" [(ngModel)]="senha" placeholder="Sua nova senha">
 
       <button type="submit" class="formButton">
         <p class="formButton__text">Redefinir senha</p>

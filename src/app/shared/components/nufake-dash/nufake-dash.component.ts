@@ -40,14 +40,14 @@ export class NufakeDashComponent implements OnInit {
 
 
     // Chamando a API para getPlanosConta
-    this.listaPlanos()
+    //this.listaPlanos()
 
     // Chamando a API para criação de plano
     // valores pegos dos campos
-    this.criaPlanos("Salario do mês", "mandre", "D")
+    //this.criaPlanos("Salario do mês", "mandre", "D")
 
     // Chamando a API de lançamentos
-    this.criaLancamento()
+    //this.criaLancamento()
   }
 
   listaPlanos() {

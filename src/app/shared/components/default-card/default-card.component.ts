@@ -9,12 +9,10 @@ import { Dashboard } from '../../interfaces/Dashboard.interface';
 export class DefaultCardComponent implements OnInit {
 
   @Input() dashboard: Dashboard;
-  
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.dashboard)
   }
 
 }
